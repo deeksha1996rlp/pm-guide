@@ -8,7 +8,7 @@
 
 ## What this is
 
-A single-page web application covering every area of project management relevant to Irish small businesses and charities. Built as part of an MSc Project Management individual assignment at UCD Michael Smurfit Graduate Business School.
+A single-page web application covering every area of project management relevant to Irish small businesses and charities. 
 
 The guide is practical, not academic. Every chapter uses real Irish business and charity examples, connects to a named academic framework, and includes tools you can use immediately.
 
@@ -87,16 +87,6 @@ Key sources:
 - Fisher, R. and Ury, W. (1991). *Getting to Yes*. 2nd ed. Penguin.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux.
 - Edmondson, A. (1999). Psychological Safety and Learning Behaviour in Work Teams. *Administrative Science Quarterly*, 44(2), 350-383.
-
----
-
-## Assignment context
-
-**Programme:** MSc Project Management
-**Institution:** UCD Michael Smurfit Graduate Business School
-**Module:** Individual Assignment — Website (40%)
-**Framework:** ECCSR — Houghton (2023)
-**Supervisor:** Joe Houghton
 
 ---
 
