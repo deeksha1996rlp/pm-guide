@@ -1498,6 +1498,7 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
 .cv-desc{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:1.25rem}
 .cv-player{width:100%;border-radius:16px;overflow:hidden;background:#000;box-shadow:0 8px 32px rgba(0,0,0,.15)}
 .cv-player video{width:100%;display:block;max-height:480px;object-fit:contain}
+@media(max-width:700px){.planning-cards-grid{grid-template-columns:1fr!important}}
 </style>
 </head>
 <body>
@@ -1573,102 +1574,6 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
 
 <!-- ALL PAGES -->
 
-<div id="page-about" class="spa-page">
-  <div class="spa-scroll">
-    <header class="ph" style="background:linear-gradient(135deg,hsl(244 76% 97%),hsl(263 70% 95%),hsl(330 81% 96%));position:relative;overflow:hidden">
-      <div class="ambient-blob indigo" style="width:300px;height:300px;top:-80px;right:-60px;position:absolute;opacity:.5" aria-hidden="true"></div>
-      <div class="ph-inner">
-        <div style="animation:phIn .9s cubic-bezier(.22,1,.36,1) .1s both;position:relative;z-index:1">
-          <div class="pk">About this guide</div>
-          <h1 class="ph1">Built for <em>Irish teams.</em></h1>
-          <p class="ps">Most PM resources are written for corporations with PMOs and twenty-person teams. Most Irish small businesses and charities have none of that — and need project management just as much.</p>
-          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:2rem">
-            <button class="btn-pa" onclick="showPage('eccsr')">Start with ECCSR &rarr;</button>
-            <button class="btn-ghost" onclick="showPage('home')">Browse all chapters</button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="content-wrap">
-      <div class="content-section">
-        <div class="cs-inner">
-          <div class="ck reveal">What this is</div>
-          <h2 class="ch2 reveal">A free, practical guide for <em>Irish organisations</em></h2>
-          <p class="cs-p reveal">Get It Done covers 14 areas of project management using real Irish examples throughout. Every concept connects to a named academic framework and an ECCSR principle. It is built on the ECCSR framework developed by Joe Houghton at UCD Michael Smurfit Graduate Business School.</p>
-
-          <div class="chapter-card-grid stagger-children reveal">
-            <div class="rich-card fade-up" style="--card-accent:hsl(244 76% 59%)"><span class="rc-icon">&#x1F393;</span><span class="rc-tag" style="background:rgba(79,70,229,.08);color:hsl(244 76% 59%)">Academic Foundation</span><div class="rc-title">ECCSR Framework</div><p class="rc-text">Every chapter viewed through the ECCSR lens — Ethical, Collaborative, Creating, Sustainable, Results — by Joe Houghton (2023), UCD Michael Smurfit.</p></div>
-            <div class="rich-card fade-up" style="--card-accent:hsl(21 94% 53%)"><span class="rc-icon">&#x1F1EE;&#x1F1EA;</span><span class="rc-tag" style="background:rgba(249,115,22,.08);color:hsl(21 94% 53%)">Irish Context</span><div class="rc-title">Built for Irish organisations</div><p class="rc-text">Real examples from Galway, Cork, Limerick, Waterford, Donegal, Meath. Pobal, Charities Regulator, DPC, LEO, and Dormant Accounts Fund throughout.</p></div>
-            <div class="rich-card fade-up" style="--card-accent:hsl(160 84% 39%)"><span class="rc-icon">&#x1F4DA;</span><span class="rc-tag" style="background:rgba(16,185,129,.08);color:hsl(160 84% 39%)">34+ References</span><div class="rc-title">Academically rigorous</div><p class="rc-text">PMI, APM, ISO 31000, Kahneman, Fisher and Ury, Edmondson, Tuckman, Porter, Kotter, Greenleaf, Freeman — all cited in Harvard style.</p></div>
-            <div class="rich-card fade-up" style="--card-accent:hsl(263 70% 55%)"><span class="rc-icon">&#x1F916;</span><span class="rc-tag" style="background:rgba(124,58,237,.08);color:hsl(263 70% 55%)">AI Practical Tools</span><div class="rc-title">8 ECCSR-aligned prompts</div><p class="rc-text">Copy-paste prompts for Irish organisations, a GDPR guide specific to the DPC Ireland, and a 30-day AI setup plan.</p></div>
-          </div>
-
-          <div class="highlight-band reveal">
-            <div class="hb-label">Assignment Context &mdash; UCD Michael Smurfit Graduate Business School</div>
-            <div class="hb-text">"Built as the MSc Project Management individual assignment (40%). The ECCSR framework by Joe Houghton provided the lens for every chapter."</div>
-            <div class="hb-source">MSc Project Management &middot; UCD Michael Smurfit Graduate Business School &middot; 2025</div>
-          </div>
-
-          <div class="ck reveal" style="margin-top:3rem">The Five Principles</div>
-          <h2 class="ch2 reveal">ECCSR in <em>plain English</em></h2>
-          <div class="process-steps reveal">
-            <div class="process-step"><div class="ps-num" style="background:hsl(244 76% 59%)">E</div><div class="ps-content"><div class="ps-title">Ethical &mdash; the lens for every decision</div><p class="ps-text">Trevino and Nelson (2021): most failures are systemic, not personal. What would you do if everyone could see?</p></div></div>
-            <div class="process-step"><div class="ps-num" style="background:hsl(263 70% 55%)">C</div><div class="ps-content"><div class="ps-title">Collaborative &mdash; genuine co-creation</div><p class="ps-text">Edmondson (1999): psychological safety is the single strongest predictor of team performance. Build it deliberately.</p></div></div>
-            <div class="process-step"><div class="ps-num" style="background:hsl(330 81% 60%)">C</div><div class="ps-content"><div class="ps-title">Creating &mdash; projects need creativity</div><p class="ps-text">PMI PMBOK 7th Ed. (2021): you cannot follow your way to a good project. You have to think your way there.</p></div></div>
-            <div class="process-step"><div class="ps-num" style="background:hsl(160 84% 39%)">S</div><div class="ps-content"><div class="ps-title">Sustainable &mdash; design for the after</div><p class="ps-text">Elliott (2013) triple bottom line: environmental, social, and economic sustainability all simultaneously.</p></div></div>
-            <div class="process-step"><div class="ps-num" style="background:hsl(21 94% 53%)">R</div><div class="ps-content"><div class="ps-title">Results &mdash; measurable outcomes for real people</div><p class="ps-text">Houghton (2023): all values must translate into evidence of genuine change. Impact, not just activity.</p></div></div>
-          </div>
-
-          
-          <!-- ══ FULL REFERENCE LIST ══ -->
-          <div class="ck reveal" style="margin-top:3rem">Academic References</div>
-          <h2 class="ch2 reveal">34 sources. <em>All verified.</em></h2>
-          <p class="cs-p reveal">Every claim in this guide is grounded in a named academic or professional body source. No speculation, no fabricated citations. Full Harvard-style reference list below.</p>
-          <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:16px;padding:2rem;margin:2rem 0" class="reveal">
-            <div style="font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;border-bottom:2px solid var(--indigo);padding-bottom:.75rem">FULL REFERENCE LIST — HARVARD STYLE</div>
-            <div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">APM (2019). <em>APM Body of Knowledge</em>. 7th ed. Association for Project Management.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">APM (2021). <em>APM Code of Professional Conduct</em>. Association for Project Management.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Beck, K. et al. (2001). <em>Manifesto for Agile Software Development</em>. agilemanifesto.org.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Belbin, R.M. (2010). <em>Team Roles at Work</em>. 2nd ed. Butterworth-Heinemann.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Charities Regulator Ireland (2021). <em>Charities Governance Code</em>. Charities Regulator.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Data Protection Commission Ireland (2023). <em>Guidance on AI and Data Protection</em>. DPC.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Elliott, D. (2013). Sustainability in Project Management. <em>International Journal of Project Management</em>.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Edmondson, A. (1999). Psychological Safety and Learning Behaviour in Work Teams. <em>Administrative Science Quarterly</em>, 44(2), 350-383.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">EU Commission (2021). <em>Ethics Guidelines for Trustworthy AI</em>. European Commission.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Fisher, R. and Ury, W. (1991). <em>Getting to Yes</em>. 2nd ed. Penguin.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Freeman, R.E. (1984). <em>Strategic Management: A Stakeholder Approach</em>. Pitman.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Goleman, D. (1995). <em>Emotional Intelligence</em>. Bantam Books.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Greenleaf, R. (1977). <em>Servant Leadership</em>. Paulist Press.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Hersey, P. and Blanchard, K. (1969). Life Cycle Theory of Leadership. <em>Training and Development Journal</em>.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Herzberg, F. (1966). <em>Work and the Nature of Man</em>. World Publishing.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Hillson, D. (2017). <em>Managing Risk in Projects</em>. 2nd ed. Routledge.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Houghton, J. (2023). <em>Project Management Made Easy: ECCSR</em>. UCD Michael Smurfit Graduate Business School.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">ISO (2018). <em>ISO 31000:2018 Risk Management Guidelines</em>. International Organization for Standardization.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Kahneman, D. (2011). <em>Thinking, Fast and Slow</em>. Farrar, Straus and Giroux.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Kahneman, D. and Tversky, A. (1979). Prospect Theory. <em>Econometrica</em>, 47(2), 263-291.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Kotter, J.P. (1996). <em>Leading Change</em>. Harvard Business School Press.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">McKinsey and Company (2024). <em>The State of AI in 2024</em>. McKinsey Global Institute.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Mintzberg, H. (1994). <em>The Rise and Fall of Strategic Planning</em>. Free Press.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">PMI (2021). <em>A Guide to the Project Management Body of Knowledge</em>. 7th ed. Project Management Institute.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">PMI (2023). <em>Pulse of the Profession 2023</em>. Project Management Institute.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Porter, M.E. (1996). What is Strategy? <em>Harvard Business Review</em>, 74(6), 61-78.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Standish Group (2022). <em>CHAOS Report 2022</em>. The Standish Group.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Thomas, K.W. and Kilmann, R.H. (1974). <em>Thomas-Kilmann Conflict Mode Instrument</em>. Xicom.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Trevino, L. and Nelson, K. (2021). <em>Managing Business Ethics</em>. 8th ed. Wiley.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">Tuckman, B. (1965). Developmental Sequence in Small Groups. <em>Psychological Bulletin</em>, 63(6), 384-399.</div>
-<div style="font-size:13px;color:#374151;line-height:1.8;padding:.625rem 0;border-bottom:1px solid #f1f5f9">UN (2015). <em>Transforming Our World: The 2030 Agenda for Sustainable Development</em>. United Nations.</div>
-          </div>
-<div class="pnav reveal">
-            <span></span>
-            <button class="pnh" onclick="showPage('home')">All chapters &uarr;</button>
-            <button class="pnl" onclick="showPage('eccsr')">ECCSR &rarr;</button>
-          </div>
-        </div>
-      </div>
-      <footer><div class="footer-inner"><div><div class="footer-brand">Get It Done</div><p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p><div class="footer-copy">&copy; 2025 &middot; UCD MSc Project Management</div></div><div class="footer-nav"><a href="javascript:void(0)" onclick="showPage('home')">Home</a><a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a><a href="javascript:void(0)" onclick="showPage('ai')">AI</a><a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a></div></div></footer>
-    </div>
-  </div>
-</div>
 
 <div id="page-home" class="spa-page active">
   <div class="spa-scroll" id="home-scroll">
@@ -2444,8 +2349,6 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
         </div>
       </footer>
     </div>
-</footer>
-    </div>
   </div>
 </div>
 <div id="page-strategy" class="spa-page" style="--pa:hsl(38 92% 50%);--pa2:#92400e">
@@ -2711,26 +2614,60 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           </div>
         </div>
       </div>
+      <div class="content-section reveal" style="background:linear-gradient(160deg,#f8faff,#f3f0ff)">
+        <div class="cs-inner" style="max-width:960px">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:stretch" class="planning-cards-grid">
+
+            <!-- Irish Example card -->
+            <div style="background:#fff;border:1.5px solid #e5e7eb;border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.05)">
+              <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,hsl(244 76% 59%),hsl(263 70% 55%))"></div>
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.25rem">
+                <span style="font-size:1.5rem">🇮🇪</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:hsl(244 76% 59%)">Irish Example</span>
+              </div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.1rem;font-weight:700;color:#0f0e17;margin-bottom:.875rem;line-height:1.3">Dublin Community Garden Charity</div>
+              <p style="font-size:13.5px;color:#374151;line-height:1.8;margin:0">A Dublin community garden charity planned their summer programme with a six-week timeline — two weeks recruiting volunteers, two weeks preparation, two weeks delivery. When they applied the outside view, calling three comparable projects, all three said recruitment alone had taken four to six weeks. Their six-week plan became a ten-week plan with a two-week contingency buffer. The programme ran in twelve weeks. Without the outside view it would have launched with unrecruited volunteers.</p>
+              <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid #f3f4f6">
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#9ca3af;letter-spacing:.06em">Kahneman (2011) — outside view applied</span>
+              </div>
+            </div>
+
+            <!-- RACI Rule card -->
+            <div style="background:linear-gradient(135deg,hsl(244 76% 59%),hsl(263 70% 55%));border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(79,70,229,.25)">
+              <div style="position:absolute;top:-40px;right:-40px;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.06)"></div>
+              <div style="position:absolute;bottom:-30px;left:-20px;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,.04)"></div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:1rem">Key Rule — PMI (2021)</div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.25rem;font-weight:700;color:#fff;line-height:1.25;margin-bottom:1.25rem">The RACI Rule —<br><em style="font-style:italic;font-weight:300">one Accountable, never two.</em></div>
+              <p style="font-size:13.5px;color:rgba(255,255,255,.85);line-height:1.8;margin:0 0 1.25rem">The single most important RACI rule: exactly <strong style="color:#fff">one</strong> person is Accountable per task. Never two. When two people are Accountable, each assumes the other is managing it. This is not a planning failure — it is how projects fall through the gap between good people who each thought the other had it covered.</p>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:rgba(255,255,255,.4);letter-spacing:.06em">PMI (2021). PMBOK Guide. 7th ed. Project Management Institute.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
       <footer>
         <div class="footer-inner">
           <div>
             <div class="footer-brand">Get It Done</div>
             <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
-            <div class="footer-copy">&copy; 2025 &middot; UCD MSc Project Management</div>
-          </div>
-
-          <div class="irish-box reveal">
-            <div class="irish-box-label">Irish Example — Dublin Community Garden Charity</div>
-            <p>A Dublin community garden charity was planning their summer programme with a six-week timeline. Their inside-view planning estimated: two weeks to recruit volunteers, two weeks of preparation, two weeks of delivery. Simple and optimistic. When they applied the outside view — calling three comparable community projects and asking what similar programmes actually took — all three said volunteer recruitment alone had taken four to six weeks. Their optimistic six-week plan became a ten-week plan with a two-week contingency buffer. The programme ran in twelve weeks. Without the outside view, it would have launched into delivery with unrecruited volunteers.</p>
-          </div>
-
-          <div class="highlight-band reveal" style="--pa:hsl(263 70% 55%);--pa2:hsl(244 76% 59%)">
-            <div class="hb-label">The RACI Rule — one Accountable, never two</div>
-            <div class="hb-text">The single most important RACI rule: exactly one person is Accountable per task. Never two. When two people are Accountable, each assumes the other is managing it. This is not a planning failure. It is how projects fall through the gap between good people who each thought the other had it covered.</div>
-            <div class="hb-source">PMI (2021). PMBOK Guide. 7th ed. Project Management Institute.</div>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
           </div>
           <div class="footer-nav">
-            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a><a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a><a href="javascript:void(0)" onclick="showPage('planning')">Planning</a><a href="javascript:void(0)" onclick="showPage('risk')">Risk</a><a href="javascript:void(0)" onclick="showPage('teams')">Teams</a><a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a><a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a><a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a><a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a><a href="javascript:void(0)" onclick="showPage('governance')">Governance</a><a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a><a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a><a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a><a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a><a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
+            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
+            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
+            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
+            <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
           </div>
         </div>
       </footer>
@@ -3086,38 +3023,63 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           </div>
         </div>
       </div>
+      <div class="content-section reveal" style="background:linear-gradient(160deg,#f8faff,#f3f0ff)">
+        <div class="cs-inner" style="max-width:960px">
+          <div class="planning-cards-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:stretch">
+
+            <div style="background:#fff;border:1.5px solid #e5e7eb;border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.05)">
+              <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,hsl(244 76% 59%),hsl(263 70% 55%))"></div>
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.25rem">
+                <span style="font-size:1.5rem">🇮🇪</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:hsl(244 76% 59%)">Irish Example</span>
+              </div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.1rem;font-weight:700;color:#0f0e17;margin-bottom:.875rem;line-height:1.3">Cork Charity CEO</div>
+              <p style="font-size:13.5px;color:#374151;line-height:1.8;margin:0">A Cork community charity CEO had a board pushing for faster results than the mission allowed. She was managing board meetings brilliantly — detailed reports, clear financials, solid governance. But she had not led the board through why the slow, trust-based approach was the right strategy. Three one-to-one conversations using Kotter's vision communication shifted the dynamic entirely. The board backed the timeline. Kotter's point: the management was fine. What was missing was leadership.</p>
+              <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid #f3f4f6">
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#9ca3af;letter-spacing:.06em">Kotter, J.P. (1996). Leading Change. Harvard Business School Press.</span>
+              </div>
+            </div>
+
+            <div style="background:linear-gradient(135deg,hsl(330 81% 52%),hsl(330 81% 38%));border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(79,70,229,.2)">
+              <div style="position:absolute;top:-40px;right:-40px;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.06)"></div>
+              <div style="position:absolute;bottom:-30px;left:-20px;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,.04)"></div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:1rem">Kotter (1996) — Key Distinction</div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.2rem;font-weight:700;color:#fff;line-height:1.25;margin-bottom:1.25rem"><em style="font-style:italic;font-weight:300">Management handles complexity. Leadership handles change.</em></div>
+              <p style="font-size:13.5px;color:rgba(255,255,255,.85);line-height:1.8;margin:0 0 1.25rem">Most project managers over-manage and under-lead. Management keeps things running. Leadership creates conditions for people to move through change. Projects are change initiatives — they need leadership from the first day, not just management.</p>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:rgba(255,255,255,.4);letter-spacing:.06em">Kotter, J.P. (1996). Leading Change. Harvard Business School Press.</div>
+            </div>
+
+          </div>
+          <div class="mini-stats reveal" style="margin-top:1.5rem">
+            <div class="ms-item" style="--ms-bg1:hsl(244 76% 97%);--ms-bg2:hsl(244 76% 94%);--ms-border:rgba(79,70,229,.12);--ms-color:hsl(244 76% 59%)"><div class="ms-n">4</div><div class="ms-l">Leadership styles in situational model (Hersey &amp; Blanchard, 1969)</div></div>
+            <div class="ms-item" style="--ms-bg1:hsl(160 84% 97%);--ms-bg2:hsl(160 84% 93%);--ms-border:rgba(16,185,129,.12);--ms-color:hsl(160 84% 39%)"><div class="ms-n">5</div><div class="ms-l">Components of emotional intelligence (Goleman, 1995)</div></div>
+            <div class="ms-item" style="--ms-bg1:hsl(21 94% 97%);--ms-bg2:hsl(21 94% 94%);--ms-border:rgba(249,115,22,.12);--ms-color:hsl(21 94% 53%)"><div class="ms-n">8</div><div class="ms-l">Steps in Kotter's change model</div></div>
+          </div>
+        </div>
+      </div>
       <footer>
         <div class="footer-inner">
           <div>
             <div class="footer-brand">Get It Done</div>
             <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
-            <div class="footer-copy">&copy; 2025 &middot; UCD MSc Project Management</div>
-          </div>
-
-          <div class="highlight-band reveal">
-            <div class="hb-label">Kotter (1996) — Key distinction</div>
-            <div class="hb-text">Most project managers over-manage and under-lead. Management handles complexity — keeping things running. Leadership handles change — creating conditions for people to move. Projects are change. They need leadership from the first day.</div>
-            <div class="hb-source">Kotter, J.P. (1996). Leading Change. Harvard Business School Press.</div>
-          </div>
-
-          <div class="irish-box reveal">
-            <div class="irish-box-label">Irish Example — Cork Charity CEO</div>
-            <p>A Cork community charity CEO had a board pushing for faster results than the mission allowed. She was managing board meetings brilliantly — detailed reports, clear financials, solid governance. But she had not led the board through why the slow, trust-based approach was the right strategy. Three one-to-one conversations using Kotter's vision communication — explaining the theory of change behind the methodology — shifted the dynamic entirely. The board backed the timeline. Kotter's point: the management was fine. What was missing was leadership.</p>
-          </div>
-
-          <div class="mini-stats reveal">
-            <div class="ms-item" style="--ms-bg1:hsl(244 76% 97%);--ms-bg2:hsl(244 76% 94%);--ms-border:rgba(79,70,229,.12);--ms-color:hsl(244 76% 59%)">
-              <div class="ms-n">4</div><div class="ms-l">Leadership styles in situational model (Hersey &amp; Blanchard, 1969)</div>
-            </div>
-            <div class="ms-item" style="--ms-bg1:hsl(160 84% 97%);--ms-bg2:hsl(160 84% 93%);--ms-border:rgba(16,185,129,.12);--ms-color:hsl(160 84% 39%)">
-              <div class="ms-n">5</div><div class="ms-l">Components of emotional intelligence (Goleman, 1995)</div>
-            </div>
-            <div class="ms-item" style="--ms-bg1:hsl(21 94% 97%);--ms-bg2:hsl(21 94% 94%);--ms-border:rgba(249,115,22,.12);--ms-color:hsl(21 94% 53%)">
-              <div class="ms-n">8</div><div class="ms-l">Steps in Kotter's change model</div>
-            </div>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
           </div>
           <div class="footer-nav">
-            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a><a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a><a href="javascript:void(0)" onclick="showPage('planning')">Planning</a><a href="javascript:void(0)" onclick="showPage('risk')">Risk</a><a href="javascript:void(0)" onclick="showPage('teams')">Teams</a><a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a><a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a><a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a><a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a><a href="javascript:void(0)" onclick="showPage('governance')">Governance</a><a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a><a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a><a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a><a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a><a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
+            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
+            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
+            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
+            <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
           </div>
         </div>
       </footer>
@@ -3209,6 +3171,22 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
       </div>
       <div class="content-section" style="background:linear-gradient(160deg,#f8faff,#f3f0ff)">
         <div class="cs-inner">
+          <div class="pullout reveal">
+            <div class="pullout-label">Freeman (1984)</div>
+            <blockquote>A stakeholder is anyone who affects or is affected by the achievement of the organisation's objectives. That definition is deliberately broad — and the most common failure is not managing stakeholders badly. It is failing to recognise some of them as stakeholders at all.</blockquote>
+            <div class="pullout-source">Freeman, R.E. (1984). Strategic Management: A Stakeholder Approach. Pitman.</div>
+          </div>
+          <div class="highlight-band reveal" style="--pa:hsl(244 76% 59%);--pa2:hsl(263 70% 55%)">
+            <div class="hb-label">The Beneficiary Blind Spot</div>
+            <div class="hb-text">The Charities Governance Code (Ireland, 2021) explicitly requires charities to seek out and respond to beneficiary voices in governance and delivery decisions. This is not a best-practice suggestion. It is a legal governance requirement. Projects designed without beneficiary input regularly miss the mark in ways that extensive funder consultation never reveals.</div>
+            <div class="hb-source">Charities Regulator Ireland (2021). Charities Governance Code. Principle 6.</div>
+          </div>
+          <div class="mini-stats reveal">
+            <div class="ms-item" style="--ms-bg1:hsl(330 81% 97%);--ms-bg2:hsl(330 81% 94%);--ms-border:rgba(236,72,153,.12);--ms-color:hsl(330 81% 60%)">
+              <div class="ms-n">4</div>
+              <div class="ms-l">Quadrants in the Power/Interest stakeholder grid (Freeman, 1984)</div>
+            </div>
+          </div>
           <div class="lb reveal">
             <div class="lb-l">ECCSR Lens &mdash; Stakeholders</div>
             <p>Truly collaborative project management means genuine stakeholder engagement — not consultation as a box-ticking exercise, but co-design as a working practice. The question to ask honestly is: who should be in the room that currently is not?</p>
@@ -3220,192 +3198,36 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           </div>
         </div>
       </div>
-      
-          <!-- Content moved from footer -->
-<div class="pullout reveal">
-            <div class="pullout-label">Freeman (1984)</div>
-            <blockquote>A stakeholder is anyone who affects or is affected by the achievement of the organisation's objectives. That definition is deliberately broad — and the most common failure is not managing stakeholders badly. It is failing to recognise some of them as stakeholders at all.</blockquote>
-            <div class="pullout-source">Freeman, R.E. (1984). Strategic Management: A Stakeholder Approach. Pitman.</div>
-          </div>
-
-          <div class="highlight-band reveal" style="--pa:hsl(244 76% 59%);--pa2:hsl(263 70% 55%)">
-            <div class="hb-label">The Beneficiary Blind Spot</div>
-            <div class="hb-text">The Charities Governance Code (Ireland, 2021) explicitly requires charities to seek out and respond to beneficiary voices in governance and delivery decisions. This is not a best-practice suggestion. It is a legal governance requirement. Projects designed without beneficiary input regularly miss the mark in ways that extensive funder consultation never reveals.</div>
-            <div class="hb-source">Charities Regulator Ireland (2021). Charities Governance Code. Principle 6.</div>
-          </div>
-
-          <div class="mini-stats reveal">
-            <div class="ms-item" style="--ms-bg1:hsl(330 81% 97%);--ms-bg2:hsl(330 81% 94%);--ms-border:rgba(236,72,153,.12);--ms-color:hsl(330 81% 60%)">
-              <div class="ms-n">4</div>
-<footer>
-        <div class="footer-inner">
-          <div>
-            <div class="footer-brand">Get It Done</div>
-            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework — Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
-            <div class="footer-copy">© 2025 · Deeksha · UCD MSc Project Management</div>
-          </div>
-          <div class="footer-nav">
-            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
-            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
-            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
-            <a href="javascript:void(0)" onclick="showPage('ai')">AI</a>
-            <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
-            <a href="javascript:void(0)" onclick="showPage('about')">About</a>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </div>
-</div>class="spa-page" style="--pa:hsl(263 70% 55%);--pa2:#2e1065">
-  <div class="spa-scroll">
-        <header class="ph" style="background:linear-gradient(135deg,#fff0f5 0%,#ffe8f0 40%,#fff0f8 100%);position:relative;overflow:hidden;min-height:340px">
-      <!-- Decorative large chapter number -->
-      <div aria-hidden="true" style="position:absolute;top:-20px;left:-10px;font-family:var(--serif);font-size:clamp(160px,20vw,260px);font-weight:900;color:hsl(330 81% 60%);opacity:.06;line-height:1;pointer-events:none;user-select:none;letter-spacing:-.04em">07</div>
-      <!-- Ambient circles -->
-      <div aria-hidden="true" style="position:absolute;top:50%;right:180px;transform:translate(50%,-50%);width:300px;height:300px;border-radius:50%;border:1.5px dashed rgba(0,0,0,.06);pointer-events:none"></div>
-      <div aria-hidden="true" style="position:absolute;top:50%;right:180px;transform:translate(50%,-50%);width:200px;height:200px;border-radius:50%;border:1px solid rgba(0,0,0,.04);pointer-events:none"></div>
-      <!-- Floating icon card -->
-      <div style="position:absolute;top:2rem;right:2.5rem;width:120px;height:140px;background:#fce7f3;border:1px solid rgba(255,255,255,.8);border-radius:22px;box-shadow:0 12px 40px rgba(0,0,0,.1),0 2px 8px rgba(0,0,0,.06);animation:floatCard 6s ease-in-out infinite,phIn 1s cubic-bezier(.22,1,.36,1) .3s both;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;padding:1rem" aria-hidden="true">
-        <!-- Corner dots like Lovable -->
-        <div style="position:absolute;top:10px;left:10px;width:6px;height:6px;border-radius:50%;background:#fbcfe8"></div>
-        <div style="position:absolute;top:10px;right:10px;width:6px;height:6px;border-radius:50%;background:#fbcfe8"></div>
-        <div style="position:absolute;bottom:10px;left:10px;width:6px;height:6px;border-radius:50%;background:#fbcfe8"></div>
-        <div style="position:absolute;bottom:10px;right:10px;width:6px;height:6px;border-radius:50%;background:#fbcfe8"></div>
-        <!-- SVG Icon -->
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M32 14l4 12h12l-10 7 4 12-10-7-10 7 4-12-10-7h12z" fill="none" stroke="#db2777" stroke-width="1.5" stroke-linejoin="round"/>
-        </svg>
-        <!-- Label -->
-        <div style="font-family:'JetBrains Mono',monospace;font-size:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#db2777;text-align:center;line-height:1.3">ETHICS</div>
-      </div>
-      <div class="ph-inner" style="position:relative;z-index:2;padding-right:160px">
-        <div style="animation:phIn .9s cubic-bezier(.22,1,.36,1) .1s both">
-          <div class="pk" style="color:hsl(330 81% 60%)">07 — Ethics</div>
-          <h1 class="ph1">Most ethical failures are not caused<em>by bad people.</em></h1>
-          <p class="ps">Trevino and Nelson (2021): ethical failure is systemic, not personal. Projects under delivery pressure are especially vulnerable. ECCSR puts ethics first because this is where it matters most.</p>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <button class="btn-pa" style="background:hsl(330 81% 60%);box-shadow:0 4px 20px hsl(330 81% 60%)40" onclick="document.getElementById('page-ethics').querySelector('.content-wrap').scrollIntoView({behavior:'smooth'})">Read on ↓</button>
-            <button class="btn-ghost" onclick="showPage('home')">All chapters</button>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-ind">
-        <span>Scroll</span>
-        <div class="scroll-line" style="background:linear-gradient(to bottom,hsl(330 81% 60%),transparent)"></div>
-      </div>
-    </header>
-            <div class="content-wrap">
-      <div class="content-section">
-        <div class="cs-inner">
-          <div class="ck reveal">Chapter 07 — Ethics</div>
-          <h2 class="ch2 reveal">Most ethical failures are not caused <em>by bad people.</em></h2>
-          <p class="cs-p reveal">Trevino and Nelson (2021) have studied organisational ethics for decades. Their conclusion is consistent: most ethical failures are caused by ordinary people responding to systems and cultures that make compromise feel normal, necessary, or even virtuous. Projects under delivery pressure are particularly vulnerable. ECCSR puts ethics first because without it, the other four principles are aspirations.</p>
-          <div class="reveal">
-          <div class="accordion-item">
-            <div class="accordion-header" onclick="toggleAcc(this)">
-              <span class="ah-title">Ethical fade — how standards erode gradually</span>
-              <span class="ah-badge" style="background:rgba(239,68,68,.1);color:hsl(0 72% 51%)">Trevino & Nelson, 2021</span>
-              <span class="ah-chevron">&#9660;</span>
-            </div>
-            <div class="accordion-body">
-              <div class="accordion-body-inner">Ethical fade is the gradual erosion of standards through a series of small compromises that each seem minor at the time. A project manager adjusts a timesheet entry. A charity director handles a safeguarding concern informally. A fundraiser slightly exaggerates projected impact. None of these people think of themselves as acting unethically. All of them are responding to pressures that made the compromise feel justified. Projects under deadline pressure are especially vulnerable.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-header" onclick="toggleAcc(this)">
-              <span class="ah-title">GDPR in practice for Irish organisations</span>
-              <span class="ah-badge" style="background:rgba(79,70,229,.1);color:hsl(244 76% 59%)">DPC Ireland, 2023</span>
-              <span class="ah-chevron">&#9660;</span>
-            </div>
-            <div class="accordion-body">
-              <div class="accordion-body-inner">The Data Protection Commission Ireland (2023) has flagged consistent breach patterns in the community sector: staff using personal email for sensitive data, storing beneficiary information in unsecured spreadsheets, using AI tools with personal data without proper data processing agreements, and retaining data longer than necessary. A data protection impact assessment should be completed for any project touching sensitive personal data before that project begins. The fine for serious breaches is up to 4% of annual global turnover.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-header" onclick="toggleAcc(this)">
-              <span class="ah-title">The APM Code of Professional Conduct</span>
-              <span class="ah-badge" style="background:rgba(16,185,129,.1);color:hsl(160 84% 39%)">APM, 2021</span>
-              <span class="ah-chevron">&#9660;</span>
-            </div>
-            <div class="accordion-body">
-              <div class="accordion-body-inner">Four core principles: Integrity (honest and trustworthy in all dealings), Respect (valuing the dignity and rights of all people), Accountability (owning the outcomes of your decisions), and Competence (only undertaking work you are qualified to do). The accountability principle matters most in small Irish organisations where oversight may be limited. When no one is watching, what standards do you apply? ECCSR's answer: the same ones.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-header" onclick="toggleAcc(this)">
-              <span class="ah-title">Conflicts of interest — declare and step back</span>
-              <span class="ah-badge" style="background:rgba(245,158,11,.1);color:hsl(38 92% 45%)">Charities Governance Code, 2021</span>
-              <span class="ah-chevron">&#9660;</span>
-            </div>
-            <div class="accordion-body">
-              <div class="accordion-body-inner">A conflict of interest arises when private interests could influence professional decisions. The Charities Governance Code requires all trustees and staff to declare conflicts and step back from affected decisions. In procurement, personnel decisions, and reporting, conflicts arise regularly. The standard is simple: declare it and step out. The organisations that handle this consistently and transparently are the ones that maintain trust with funders and regulators.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-header" onclick="toggleAcc(this)">
-              <span class="ah-title">Supply chain ethics and EU due diligence</span>
-              <span class="ah-badge" style="background:rgba(124,58,237,.1);color:hsl(263 70% 55%)">EU CSDD Directive, 2024</span>
-              <span class="ah-chevron">&#9660;</span>
-            </div>
-            <div class="accordion-body">
-              <div class="accordion-body-inner">Ethical project management extends to the supply chain. The EU Corporate Sustainability Due Diligence Directive (2024) will require organisations above certain thresholds to conduct human rights and environmental due diligence in their supply chains. Even below those thresholds, ECCSR requires that procurement decisions reflect the organisation's values. Who are you buying from, and under what conditions do their employees work?</div>
-            </div>
-          </div>
-          </div>
-          <div class="insight-box reveal">
-            <div class="insight-label">Academic Insight</div>
-            <p>Trevino and Nelson (2021) identify ethical fade as the most common route to organisational misconduct. It is a gradual slide through individually small compromises. Projects under pressure are especially vulnerable, which is precisely why explicit ethical commitments matter most when resources are tight.</p>
-          </div>
-        </div>
-      </div>
-      <div class="content-section" style="background:linear-gradient(160deg,#f8faff,#f3f0ff)">
-        <div class="cs-inner">
-          <div class="lb reveal">
-            <div class="lb-l">ECCSR Lens &mdash; Ethics</div>
-            <p>The E in ECCSR is not a starting point you move past. It applies to every decision, every day, throughout the entire project. Ethics is not the first stage. It is the condition that makes all the other stages possible.</p>
-          </div>
-          <div class="pnav reveal">
-            <button class="pnl" onclick="showPage('stakeholders')">&larr; Stakeholders</button>
-            <button class="pnh" onclick="showPage('home')">All chapters &#8593;</button>
-            <button class="pnl" onclick="showPage('sustainability')">Sustainability &rarr;</button>
-          </div>
-        </div>
-      </div>
       <footer>
         <div class="footer-inner">
           <div>
             <div class="footer-brand">Get It Done</div>
             <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
-            <div class="footer-copy">&copy; 2025 &middot; UCD MSc Project Management</div>
-          </div>
-
-          <div class="pullout reveal">
-            <div class="pullout-label">Trevino &amp; Nelson (2021)</div>
-            <blockquote>Most ethical failures are not caused by bad people making deliberate choices to harm others. They are caused by ordinary people responding to systems, incentives, and cultures that make ethical compromise feel normal, necessary, or even virtuous.</blockquote>
-            <div class="pullout-source">Trevino, L. and Nelson, K. (2021). Managing Business Ethics. 8th ed. Wiley.</div>
-          </div>
-
-          <div class="irish-box reveal">
-            <div class="irish-box-label">Irish Example — Kerry Digital Agency</div>
-            <p>A Kerry digital agency was building a community health app for a local HSE-funded charity. Midway through, the developer started using ChatGPT to help draft content using sample patient scenarios the charity had shared informally. No data processing agreement had been signed with OpenAI. No consent had been obtained from the people whose scenarios were being used. The agency had not deliberately decided to act unethically — they were solving a deadline problem with a tool that was to hand. This is exactly what Trevino and Nelson describe: not a villain but a person responding to pressure in a system that made the shortcut feel acceptable.</p>
-          </div>
-
-          <div class="mini-stats reveal">
-            <div class="ms-item" style="--ms-bg1:hsl(0 72% 97%);--ms-bg2:hsl(0 72% 94%);--ms-border:rgba(239,68,68,.12);--ms-color:hsl(0 72% 51%)">
-              <div class="ms-n">4%</div><div class="ms-l">of global annual turnover — maximum GDPR fine for serious breaches (DPC Ireland)</div>
-            </div>
-            <div class="ms-item" style="--ms-bg1:hsl(244 76% 97%);--ms-bg2:hsl(244 76% 94%);--ms-border:rgba(79,70,229,.12);--ms-color:hsl(244 76% 59%)">
-              <div class="ms-n">4</div><div class="ms-l">APM ethical principles: Integrity, Respect, Accountability, Competence</div>
-            </div>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
           </div>
           <div class="footer-nav">
-            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a><a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a><a href="javascript:void(0)" onclick="showPage('planning')">Planning</a><a href="javascript:void(0)" onclick="showPage('risk')">Risk</a><a href="javascript:void(0)" onclick="showPage('teams')">Teams</a><a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a><a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a><a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a><a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a><a href="javascript:void(0)" onclick="showPage('governance')">Governance</a><a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a><a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a><a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a><a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a><a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
+            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
+            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
+            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
+            <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
           </div>
         </div>
       </footer>
     </div>
   </div>
 </div>
+
 <div id="page-sustainability" class="spa-page" style="--pa:hsl(160 84% 39%);--pa2:#022c22">
   <div class="spa-scroll">
         <header class="ph" style="background:linear-gradient(135deg,#f0fdf8 0%,#e8faf0 40%,#f0fcf5 100%);position:relative;overflow:hidden;min-height:340px">
@@ -3506,32 +3328,64 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           </div>
         </div>
       </div>
-      <footer>
-        <div class="footer-inner">
-          <div>
-            <div class="footer-brand">Get It Done</div>
-            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
-            <div class="footer-copy">&copy; 2025 &middot; UCD MSc Project Management</div>
-          </div>
-
           <div class="pullout reveal">
             <div class="pullout-label">The question every Irish project should answer before it starts</div>
             <blockquote>What will remain when the funding ends — and who will be responsible for maintaining it? This question, asked at the beginning rather than the end, changes everything about how the project is designed.</blockquote>
             <div class="pullout-source">Synthesised from Elliott (2013) and practitioner guidance for Irish charity context.</div>
           </div>
 
-          <div class="irish-box reveal">
-            <div class="irish-box-label">Irish Example — Rural Community Hub, Roscommon</div>
-            <p>A rural community development project in Roscommon ran a digital skills programme for three years under LEADER funding. It delivered excellent outcomes by every metric in the funder report. When the funding ended, the facilitator left, the equipment was repurposed, and within eighteen months no trace of the programme remained in the community. A parallel project in the same county took a different approach: in year two, they trained four local volunteers as facilitators, secured a maintenance agreement with a local FE college, and left the equipment in the care of the community centre with a written sustainability plan. That programme is still running, four years later, without any external funding.</p>
-          </div>
+      <div class="content-section reveal" style="background:linear-gradient(160deg,#f8faff,#f3f0ff)">
+        <div class="cs-inner" style="max-width:960px">
+          <div class="planning-cards-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:stretch">
 
-          <div class="highlight-band reveal" style="--pa:hsl(160 84% 39%);--pa2:hsl(160 84% 28%)">
-            <div class="hb-label">Irish SDG Alignment — what funders now require</div>
-            <div class="hb-text">The Community Foundation for Ireland, Rethink Ireland, and EU social funding streams now expect funded projects to demonstrate SDG alignment. The most relevant for Irish small organisations: SDG 3 (Health and Wellbeing), SDG 8 (Decent Work), SDG 10 (Reduced Inequalities), SDG 11 (Sustainable Communities), SDG 13 (Climate Action), SDG 16 (Strong Institutions).</div>
-            <div class="hb-source">UN (2015). Transforming Our World: The 2030 Agenda. United Nations.</div>
+            <div style="background:#fff;border:1.5px solid #e5e7eb;border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.05)">
+              <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,hsl(244 76% 59%),hsl(263 70% 55%))"></div>
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.25rem">
+                <span style="font-size:1.5rem">🇮🇪</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:hsl(244 76% 59%)">Irish Example</span>
+              </div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.1rem;font-weight:700;color:#0f0e17;margin-bottom:.875rem;line-height:1.3">Rural Community Hub, Roscommon</div>
+              <p style="font-size:13.5px;color:#374151;line-height:1.8;margin:0">A Roscommon community project ran a digital skills programme for three years under LEADER funding. When funding ended, the facilitator left, the equipment was repurposed, and within eighteen months no trace remained. A parallel project took a different approach: in year two they trained four local volunteers as facilitators, secured a maintenance agreement with a local FE college, and left a written sustainability plan. That programme is still running, four years later, without any external funding.</p>
+              <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid #f3f4f6">
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#9ca3af;letter-spacing:.06em">Elliott (2013) — triple bottom line applied</span>
+              </div>
+            </div>
+
+            <div style="background:linear-gradient(135deg,hsl(160 84% 36%),hsl(160 84% 24%));border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(79,70,229,.2)">
+              <div style="position:absolute;top:-40px;right:-40px;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.06)"></div>
+              <div style="position:absolute;bottom:-30px;left:-20px;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,.04)"></div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:1rem">Irish SDG Alignment — What Funders Now Require</div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.2rem;font-weight:700;color:#fff;line-height:1.25;margin-bottom:1.25rem"><em style="font-style:italic;font-weight:300">Design for the after.</em></div>
+              <p style="font-size:13.5px;color:rgba(255,255,255,.85);line-height:1.8;margin:0 0 1.25rem">The Community Foundation for Ireland, Rethink Ireland, and EU social funding streams now expect funded projects to demonstrate SDG alignment. Most relevant for Irish small organisations: SDG 3 (Health and Wellbeing), SDG 8 (Decent Work), SDG 10 (Reduced Inequalities), SDG 11 (Sustainable Communities), SDG 13 (Climate Action), SDG 16 (Strong Institutions).</p>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:rgba(255,255,255,.4);letter-spacing:.06em">UN (2015). Transforming Our World: The 2030 Agenda. United Nations.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-inner">
+          <div>
+            <div class="footer-brand">Get It Done</div>
+            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
           </div>
           <div class="footer-nav">
-            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a><a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a><a href="javascript:void(0)" onclick="showPage('planning')">Planning</a><a href="javascript:void(0)" onclick="showPage('risk')">Risk</a><a href="javascript:void(0)" onclick="showPage('teams')">Teams</a><a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a><a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a><a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a><a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a><a href="javascript:void(0)" onclick="showPage('governance')">Governance</a><a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a><a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a><a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a><a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a><a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
+            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
+            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
+            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
+            <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
           </div>
         </div>
       </footer>
@@ -3647,38 +3501,69 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           </div>
         </div>
       </div>
-      <footer>
-        <div class="footer-inner">
-          <div>
-            <div class="footer-brand">Get It Done</div>
-            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
-            <div class="footer-copy">&copy; 2025 &middot; UCD MSc Project Management</div>
-          </div>
-
           <div class="pullout reveal">
             <div class="pullout-label">APM (2019)</div>
             <blockquote>Projects with clear governance structures are significantly more likely to deliver on time and within budget. Governance is not overhead. It is a direct enabler of project delivery.</blockquote>
             <div class="pullout-source">APM (2019). APM Body of Knowledge. 7th ed. Association for Project Management.</div>
           </div>
 
-          <div class="irish-box reveal">
-            <div class="irish-box-label">Irish Example — Sligo Charity, Charities Regulator Review</div>
-            <p>A Sligo charity received a routine compliance review from the Charities Regulator. They had no written risk register, no conflict of interest policy, and their board minutes did not document how decisions had been made. The Regulator did not remove their charitable status — but they issued a formal compliance notice, required a governance improvement plan within 90 days, and flagged the charity as requiring follow-up. The reputational impact was significant: two funders asked for the outcome of the review before releasing grant payments. The charity had not been doing anything wrong in their programme delivery. Their governance documentation simply did not reflect the governance that was actually happening. The lesson: if it is not written down, it did not happen.</p>
-          </div>
+      <div class="content-section reveal" style="background:linear-gradient(160deg,#f8faff,#f3f0ff)">
+        <div class="cs-inner" style="max-width:960px">
+          <div class="planning-cards-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:stretch">
 
-          <div class="mini-stats reveal">
-            <div class="ms-item" style="--ms-bg1:hsl(244 76% 97%);--ms-bg2:hsl(244 76% 94%);--ms-border:rgba(79,70,229,.12);--ms-color:hsl(244 76% 59%)">
-              <div class="ms-n">6</div><div class="ms-l">Principles in the Charities Governance Code (Ireland, 2021)</div>
+            <div style="background:#fff;border:1.5px solid #e5e7eb;border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.05)">
+              <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,hsl(244 76% 59%),hsl(263 70% 55%))"></div>
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.25rem">
+                <span style="font-size:1.5rem">🇮🇪</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:hsl(244 76% 59%)">Irish Example</span>
+              </div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.1rem;font-weight:700;color:#0f0e17;margin-bottom:.875rem;line-height:1.3">Sligo Charity — Charities Regulator Review</div>
+              <p style="font-size:13.5px;color:#374151;line-height:1.8;margin:0">A Sligo charity received a routine compliance review. They had no written risk register, no conflict of interest policy, and board minutes didn't document how decisions were made. The Regulator issued a formal compliance notice, required a governance improvement plan within 90 days, and flagged the charity for follow-up. Two funders asked for the outcome before releasing grant payments. The charity hadn't been doing anything wrong — their documentation simply didn't reflect the governance that was actually happening. The lesson: if it is not written down, it did not happen.</p>
+              <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid #f3f4f6">
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#9ca3af;letter-spacing:.06em">Charities Regulator Ireland (2021). Charities Governance Code.</span>
+              </div>
             </div>
-            <div class="ms-item" style="--ms-bg1:hsl(21 94% 97%);--ms-bg2:hsl(21 94% 94%);--ms-border:rgba(249,115,22,.12);--ms-color:hsl(21 94% 53%)">
-              <div class="ms-n">2009</div><div class="ms-l">Charities Act Ireland — the legislative foundation</div>
+
+            <div style="background:linear-gradient(135deg,hsl(244 76% 59%),hsl(244 76% 44%));border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(79,70,229,.2)">
+              <div style="position:absolute;top:-40px;right:-40px;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.06)"></div>
+              <div style="position:absolute;bottom:-30px;left:-20px;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,.04)"></div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:1rem">APM (2019) — Governance as Performance</div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.2rem;font-weight:700;color:#fff;line-height:1.25;margin-bottom:1.25rem"><em style="font-style:italic;font-weight:300">Governance is not overhead. It is a direct enabler of project delivery.</em></div>
+              <p style="font-size:13.5px;color:rgba(255,255,255,.85);line-height:1.8;margin:0 0 1.25rem">Projects with clear governance structures are significantly more likely to deliver on time and within budget. For Irish charities, the Charities Governance Code (2021) is not optional — it is the legal framework within which every project must operate.</p>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:rgba(255,255,255,.4);letter-spacing:.06em">APM (2019). APM Body of Knowledge. 7th ed. Association for Project Management.</div>
             </div>
-            <div class="ms-item" style="--ms-bg1:hsl(160 84% 97%);--ms-bg2:hsl(160 84% 93%);--ms-border:rgba(16,185,129,.12);--ms-color:hsl(160 84% 39%)">
-              <div class="ms-n">11,000+</div><div class="ms-l">Registered charities in Ireland (Charities Regulator, 2024)</div>
-            </div>
+
+          </div>
+          <div class="mini-stats reveal" style="margin-top:1.5rem">
+            <div class="ms-item" style="--ms-bg1:hsl(244 76% 97%);--ms-bg2:hsl(244 76% 94%);--ms-border:rgba(79,70,229,.12);--ms-color:hsl(244 76% 59%)"><div class="ms-n">6</div><div class="ms-l">Principles in the Charities Governance Code (Ireland, 2021)</div></div>
+            <div class="ms-item" style="--ms-bg1:hsl(21 94% 97%);--ms-bg2:hsl(21 94% 94%);--ms-border:rgba(249,115,22,.12);--ms-color:hsl(21 94% 53%)"><div class="ms-n">2009</div><div class="ms-l">Charities Act Ireland — the legislative foundation</div></div>
+            <div class="ms-item" style="--ms-bg1:hsl(160 84% 97%);--ms-bg2:hsl(160 84% 93%);--ms-border:rgba(16,185,129,.12);--ms-color:hsl(160 84% 39%)"><div class="ms-n">11,000+</div><div class="ms-l">Registered charities in Ireland (Charities Regulator, 2024)</div></div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-inner">
+          <div>
+            <div class="footer-brand">Get It Done</div>
+            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
           </div>
           <div class="footer-nav">
-            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a><a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a><a href="javascript:void(0)" onclick="showPage('planning')">Planning</a><a href="javascript:void(0)" onclick="showPage('risk')">Risk</a><a href="javascript:void(0)" onclick="showPage('teams')">Teams</a><a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a><a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a><a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a><a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a><a href="javascript:void(0)" onclick="showPage('governance')">Governance</a><a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a><a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a><a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a><a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a><a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
+            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
+            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
+            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
+            <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
           </div>
         </div>
       </footer>
@@ -3783,26 +3668,58 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           </div>
         </div>
       </div>
+      <div class="content-section reveal" style="background:linear-gradient(160deg,#f8faff,#f3f0ff)">
+        <div class="cs-inner" style="max-width:960px">
+          <div class="planning-cards-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:stretch">
+
+            <div style="background:#fff;border:1.5px solid #e5e7eb;border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.05)">
+              <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,hsl(244 76% 59%),hsl(263 70% 55%))"></div>
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.25rem">
+                <span style="font-size:1.5rem">🇮🇪</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:hsl(244 76% 59%)">Irish Example</span>
+              </div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.1rem;font-weight:700;color:#0f0e17;margin-bottom:.875rem;line-height:1.3">Galway Tech SME — Enterprise Ireland</div>
+              <p style="font-size:13.5px;color:#374151;line-height:1.8;margin:0">A Galway technology SME tried to run a full Agile Scrum implementation on a website redesign funded through Enterprise Ireland. Two-week sprints with daily standups, no defined end-state. Enterprise Ireland required a detailed advance plan with milestone sign-off. Friction was constant. The project manager eventually adopted a hybrid: Waterfall phases agreed with Enterprise Ireland, with Agile sprints inside each phase. Both stakeholders were satisfied. The lesson: never let methodology become ideology.</p>
+              <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid #f3f4f6">
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#9ca3af;letter-spacing:.06em">PMI PMBOK 7th Ed. (2021) — Hybrid methodology</span>
+              </div>
+            </div>
+
+            <div style="background:linear-gradient(135deg,hsl(263 70% 55%),hsl(244 76% 59%));border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(79,70,229,.2)">
+              <div style="position:absolute;top:-40px;right:-40px;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.06)"></div>
+              <div style="position:absolute;bottom:-30px;left:-20px;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,.04)"></div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:1rem">The Honest Recommendation for Irish Teams</div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.2rem;font-weight:700;color:#fff;line-height:1.25;margin-bottom:1.25rem"><em style="font-style:italic;font-weight:300">Waterfall planning + Agile execution.</em></div>
+              <p style="font-size:13.5px;color:rgba(255,255,255,.85);line-height:1.8;margin:0 0 1.25rem">Use Waterfall-style planning and governance — structured reporting satisfies funders. Use Agile-style execution inside phases — short cycles and continuous feedback handles real-world uncertainty. This hybrid is what experienced Irish project managers already do. Knowing the frameworks just makes those choices deliberate.</p>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:rgba(255,255,255,.4);letter-spacing:.06em">Synthesised from PMI PMBOK 7th Ed. (2021) and practitioner experience in Irish context.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
       <footer>
         <div class="footer-inner">
           <div>
             <div class="footer-brand">Get It Done</div>
             <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
-            <div class="footer-copy">&copy; 2025 &middot; UCD MSc Project Management</div>
-          </div>
-
-          <div class="highlight-band reveal" style="--pa:hsl(263 70% 55%);--pa2:hsl(244 76% 59%)">
-            <div class="hb-label">The honest recommendation for Irish teams</div>
-            <div class="hb-text">Use Waterfall-style planning and governance — structured reporting satisfies funders. Use Agile-style execution inside phases — short cycles and continuous feedback handles real-world uncertainty. This hybrid is what experienced Irish project managers already do. Knowing the frameworks just makes those choices deliberate.</div>
-            <div class="hb-source">Synthesised from PMI PMBOK 7th Ed. (2021) and practitioner experience in Irish context.</div>
-          </div>
-
-          <div class="irish-box reveal">
-            <div class="irish-box-label">Irish Example — Galway Tech SME Digital Project</div>
-            <p>A Galway technology SME tried to run a full Agile Scrum implementation on a website redesign project funded through Enterprise Ireland. Two-week sprints with daily standups, no defined end-state, continuous backlog refinement. Enterprise Ireland's reporting required a detailed advance plan with milestone sign-off. The friction was constant — the Agile process kept evolving the scope while the funder required fixed deliverables. The project manager eventually adopted a hybrid: Waterfall phases agreed with Enterprise Ireland (Discovery, Design, Build, Test, Launch) with Agile sprints inside each phase. Both stakeholders were satisfied. The lesson: never let methodology become ideology.</p>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
           </div>
           <div class="footer-nav">
-            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a><a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a><a href="javascript:void(0)" onclick="showPage('planning')">Planning</a><a href="javascript:void(0)" onclick="showPage('risk')">Risk</a><a href="javascript:void(0)" onclick="showPage('teams')">Teams</a><a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a><a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a><a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a><a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a><a href="javascript:void(0)" onclick="showPage('governance')">Governance</a><a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a><a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a><a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a><a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a><a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
+            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
+            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
+            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
+            <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
           </div>
         </div>
       </footer>
@@ -4316,18 +4233,32 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
       </div>
     </div>
 
-    <footer>
-      <div class="footer-inner">
-        <div>
-          <div class="footer-brand">Get It Done</div>
-          <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework — Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
-          <div class="footer-copy">© 2025 · Deeksha · UCD MSc Project Management</div>
+          <footer>
+        <div class="footer-inner">
+          <div>
+            <div class="footer-brand">Get It Done</div>
+            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
+          </div>
+          <div class="footer-nav">
+            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
+            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
+            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
+            <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
+          </div>
         </div>
-        <div class="footer-nav">
-          <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a><a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a><a href="javascript:void(0)" onclick="showPage('planning')">Planning</a><a href="javascript:void(0)" onclick="showPage('risk')">Risk</a><a href="javascript:void(0)" onclick="showPage('teams')">Teams</a><a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a><a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a><a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a><a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
-        </div>
-      </div>
-    </footer>
+      </footer>
   </div>
 </div>
 
@@ -4566,39 +4497,70 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           </div>
         </div>
       </div>
-      <footer>
-        <div class="footer-inner">
-          <div>
-            <div class="footer-brand">Get It Done</div>
-            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
-            <div class="footer-copy">&copy; 2025 &middot; UCD MSc Project Management</div>
-          </div>
-
           <div class="pullout reveal">
             <div class="pullout-label">Fisher &amp; Ury (1991) — The key insight</div>
             <blockquote>The most common negotiating mistake is confusing a person's position with their interest. Positions are often incompatible. Interests almost never are. Surface the interest and you open possibilities that positional bargaining consistently closes off.</blockquote>
             <div class="pullout-source">Fisher, R. and Ury, W. (1991). Getting to Yes. 2nd ed. Penguin.</div>
           </div>
 
-          <div class="irish-box reveal">
-            <div class="irish-box-label">Irish Example — Funder Negotiation, Community Foundation</div>
-            <p>A community organisation in Clare was negotiating a funding renewal with the Community Foundation for Ireland. The funder's position was: reduce the programme from 40 participants to 25, citing value for money. The organisation's position was: 40 participants or the programme is not viable. Classic positional deadlock. When the project manager asked what was behind the funder's concern — what was the actual interest — the answer was: cost per outcome, not participant count. The funder needed to demonstrate impact per euro spent. The organisation proposed measuring three additional outcome indicators that would demonstrate significantly higher impact per participant than the previous cohort. The funder agreed to 38 participants with the enhanced measurement framework. Nobody got their position. Both got their interest.</p>
-          </div>
+      <div class="content-section reveal" style="background:linear-gradient(160deg,#f8faff,#f3f0ff)">
+        <div class="cs-inner" style="max-width:960px">
+          <div class="planning-cards-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:stretch">
 
-          <div class="mini-stats reveal">
-            <div class="ms-item" style="--ms-bg1:hsl(38 92% 97%);--ms-bg2:hsl(38 92% 94%);--ms-border:rgba(245,158,11,.12);--ms-color:hsl(38 92% 45%)">
-              <div class="ms-n">5</div><div class="ms-l">Thomas-Kilmann conflict styles (1974)</div>
+            <div style="background:#fff;border:1.5px solid #e5e7eb;border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.05)">
+              <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,hsl(244 76% 59%),hsl(263 70% 55%))"></div>
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.25rem">
+                <span style="font-size:1.5rem">🇮🇪</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:hsl(244 76% 59%)">Irish Example</span>
+              </div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.1rem;font-weight:700;color:#0f0e17;margin-bottom:.875rem;line-height:1.3">Funder Negotiation — Community Foundation Ireland</div>
+              <p style="font-size:13.5px;color:#374151;line-height:1.8;margin:0">A community organisation in Clare was negotiating a funding renewal with the Community Foundation for Ireland. The funder's position: reduce from 40 to 25 participants. The organisation's position: 40 or the programme is not viable. Classic positional deadlock. When the PM asked what was behind the funder's concern, the answer was cost per outcome — not participant count. They proposed three additional outcome indicators showing higher impact per participant. The funder agreed to 38 participants. Nobody got their position. Both got their interest.</p>
+              <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid #f3f4f6">
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#9ca3af;letter-spacing:.06em">Fisher, R. and Ury, W. (1991). Getting to Yes. 2nd ed. Penguin.</span>
+              </div>
             </div>
-            <div class="ms-item" style="--ms-bg1:hsl(244 76% 97%);--ms-bg2:hsl(244 76% 94%);--ms-border:rgba(79,70,229,.12);--ms-color:hsl(244 76% 59%)">
-              <div class="ms-n">6</div><div class="ms-l">Steps in the DECIDE decision-making model</div>
+
+            <div style="background:linear-gradient(135deg,hsl(38 92% 50%),hsl(21 94% 53%));border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(79,70,229,.2)">
+              <div style="position:absolute;top:-40px;right:-40px;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.06)"></div>
+              <div style="position:absolute;bottom:-30px;left:-20px;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,.04)"></div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:1rem">Fisher & Ury (1991) — The Key Insight</div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.2rem;font-weight:700;color:#fff;line-height:1.25;margin-bottom:1.25rem"><em style="font-style:italic;font-weight:300">Interests are more flexible than positions.</em></div>
+              <p style="font-size:13.5px;color:rgba(255,255,255,.85);line-height:1.8;margin:0 0 1.25rem">The most common negotiating mistake is confusing a person's position with their interest. Positions are often incompatible. Interests almost never are. Surface the interest and you open possibilities that positional bargaining consistently closes off.</p>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:rgba(255,255,255,.4);letter-spacing:.06em">Fisher, R. and Ury, W. (1991). Getting to Yes. 2nd ed. Penguin.</div>
             </div>
+
           </div>
-          <div class="footer-nav">
-            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a><a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a><a href="javascript:void(0)" onclick="showPage('planning')">Planning</a><a href="javascript:void(0)" onclick="showPage('risk')">Risk</a><a href="javascript:void(0)" onclick="showPage('teams')">Teams</a><a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a><a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a><a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a><a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a><a href="javascript:void(0)" onclick="showPage('governance')">Governance</a><a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a><a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a><a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a><a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a><a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
+          <div class="mini-stats reveal" style="margin-top:1.5rem">
+            <div class="ms-item" style="--ms-bg1:hsl(38 92% 97%);--ms-bg2:hsl(38 92% 94%);--ms-border:rgba(245,158,11,.12);--ms-color:hsl(38 92% 45%)"><div class="ms-n">5</div><div class="ms-l">Thomas-Kilmann conflict styles (1974)</div></div>
+            <div class="ms-item" style="--ms-bg1:hsl(244 76% 97%);--ms-bg2:hsl(244 76% 94%);--ms-border:rgba(79,70,229,.12);--ms-color:hsl(244 76% 59%)"><div class="ms-n">6</div><div class="ms-l">Steps in the DECIDE decision-making model</div></div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+      <footer>
+        <div class="footer-inner">
+          <div>
+            <div class="footer-brand">Get It Done</div>
+            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
+          </div>
+          <div class="footer-nav">
+            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
+            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
+            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
+            <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
+          </div>
+        </div>
       </footer>
     </div>
   </div>
@@ -4722,15 +4684,29 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           </div>
         </div>
       </div>
-      <footer>
+            <footer>
         <div class="footer-inner">
           <div>
             <div class="footer-brand">Get It Done</div>
-            <p class="footer-sub">UCD MSc Project Management · ECCSR framework — Houghton (2023)</p>
-            <div class="footer-copy">© 2025 · UCD Michael Smurfit Graduate Business School</div>
+            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
           </div>
           <div class="footer-nav">
-            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a><a href="javascript:void(0)" onclick="showPage('ai')">AI</a><a href="javascript:void(0)" onclick="showPage('tools')">Templates</a><a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
+            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
+            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
+            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
+            <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
           </div>
         </div>
       </footer>
@@ -4761,19 +4737,18 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           <h2 class="ch2 reveal">Ready to use, <em>right now.</em></h2>
           <p class="cs-p reveal">Every template below is pre-filled with a realistic Irish project scenario. Download the one you need, replace the example content with your own project details, and you have a professional PM document in under 30 minutes.</p>
 
-          <div id="tools-grid" class="chapter-card-grid stagger-children reveal">
+                    <div id="tools-grid" class="chapter-card-grid stagger-children reveal">
 
             <!-- Project Charter -->
             <div class="rich-card fade-up" style="--card-accent:hsl(244 76% 59%)">
               <span class="rc-icon">📋</span>
               <span class="rc-tag" style="background:rgba(79,70,229,.08);color:hsl(244 76% 59%)">ECCSR — Results</span>
               <div class="rc-title">Project Charter</div>
-              <p class="rc-text">Defines scope, objectives, key stakeholders, budget, and timeline before work begins. Pre-filled: Clonmel Community Garden — Spring Programme 2025.</p>
-              <div style="margin-top:1.25rem;padding:1rem;background:linear-gradient(135deg,#f5f3ff,#eef2ff);border-radius:10px;font-family:var(--mono);font-size:11px;color:hsl(244 76% 45%)">
-                <div style="font-weight:700;margin-bottom:.5rem">WHAT TO FILL IN:</div>
-                Project name · Organisation · Sponsor · Objectives · Key milestones · Budget · Approval sign-off
+              <p class="rc-text">Defines scope, objectives, key stakeholders, budget, and timeline before work begins. Pre-filled: Clonmel Community Garden — Spring Programme 2025. Includes ECCSR check section.</p>
+              <div style="margin-top:1rem;padding:.875rem;background:#f8faff;border-radius:10px;font-family:var(--mono);font-size:10px;color:hsl(244 76% 45%);line-height:1.7">
+                <strong>Includes:</strong> Overview · SMART objectives · Scope · Budget breakdown · Milestones · Stakeholders · ECCSR check · Approval sign-off
               </div>
-              <button onclick="(function(){var c=decodeURIComponent('PROJECT%20CHARTER%0A%0AProject%20Name%3A%20%5BYour%20Project%5D%0AOrganisation%3A%20%5BYour%20Org%5D%0AProject%20Sponsor%3A%20%0AProject%20Manager%3A%20%0ADate%3A%20%0A%0APURPOSE%0A%5BDescribe%20the%20project%20purpose%20in%202-3%20sentences%5D%0A%0AOBJECTIVES%20(SMART)%0A1.%20%0A2.%20%0A3.%20%0A%0ASCOPE%0AIn%20scope%3A%20%0AOut%20of%20scope%3A%20%0A%0ABUDGET%0ATotal%20budget%3A%20%E2%82%AC%0AFunding%20source%3A%20%0A%0AMILESTONES%0APhase%201%3A%20%0APhase%202%3A%20%0APhase%203%3A%20%0A%0AAPPROVAL%0AProject%20Sponsor%20signature%3A%20%5F%5F%5F%5F%5F%5F%5F%5F%0ADate%3A%20%0A%0AECCSR%20CHECK%0AEthical%3A%20%0ACollaborative%3A%20%0ACreating%20value%3A%20%0ASustainable%3A%20%0AResults%20measurable%3A%20');var b=new Blob([c],{type:'text/plain'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='Project_Charter_Template.txt';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(a.href);})()" class="btn-pa" style="display:inline-block;margin-top:1rem;font-size:13px;padding:10px 20px;cursor:pointer;border:none">Download template ↓</button>
+              <a href="data:text/csv;base64,IkdFVCBJVCBET05FIOKAlCBQUk9KRUNUIENIQVJURVIiLCJFQ0NTUiBGcmFtZXdvcmsg4oCUIEhvdWdodG9uICgyMDIzKSIKIiIsIlByZS1maWxsZWQgZXhhbXBsZTogQ2xvbm1lbCBDb21tdW5pdHkgR2FyZGVuIERpZ2l0YWwgTGl0ZXJhY3kgUHJvZ3JhbW1lIgoiIgoiU0VDVElPTiAxOiBQUk9KRUNUIE9WRVJWSUVXIgoiUHJvamVjdCBOYW1lIiwiQ2xvbm1lbCBDb21tdW5pdHkgR2FyZGVuIOKAlCBEaWdpdGFsIExpdGVyYWN5IGZvciBPbGRlciBBZHVsdHMiCiJPcmdhbmlzYXRpb24iLCJDbG9ubWVsIENvbW11bml0eSBHYXJkZW4gQ0xHIgoiUHJvamVjdCBTcG9uc29yIiwiW0JvYXJkIENoYWlycGVyc29uIE5hbWVdIgoiUHJvamVjdCBNYW5hZ2VyIiwiW1lvdXIgTmFtZV0iCiJTdGFydCBEYXRlIiwiMDEvMDkvMjAyNSIKIkVuZCBEYXRlIiwiMzEvMDMvMjAyNiIKIkRhdGUgb2YgVGhpcyBDaGFydGVyIiwiW1RvZGF5J3MgRGF0ZV0iCiIiCiJTRUNUSU9OIDI6IFBVUlBPU0UiCiJQcm9ibGVtIC8gTmVlZCIsIk9sZGVyIGFkdWx0cyBpbiB0aGUgQ2xvbm1lbCBhcmVhIGxhY2sgZGlnaXRhbCBza2lsbHMgdG8gYWNjZXNzIG9ubGluZSBzZXJ2aWNlcywgc29jaWFsIGNvbm5lY3Rpb24sIGFuZCBoZWFsdGggaW5mb3JtYXRpb24uIgoiU29sdXRpb24iLCJEZWxpdmVyIGEgMTItd2VlayBkaWdpdGFsIGxpdGVyYWN5IHByb2dyYW1tZSBmb3IgYWR1bHRzIDY1KyBhdCB0aGUgQ29tbXVuaXR5IEdhcmRlbiBjZW50cmUuIgoiQmVuZWZpY2lhcmllcyIsIjQwIGFkdWx0cyBhZ2VkIDY1KyBpbiBDbG9ubWVsIGFuZCBzdXJyb3VuZGluZyB0b3dubGFuZHMiCiIiCiJTRUNUSU9OIDM6IFNNQVJUIE9CSkVDVElWRVMiCiJPYmplY3RpdmUgIyIsIk9iamVjdGl2ZSBTdGF0ZW1lbnQiLCJNZWFzdXJlIiwiVGFyZ2V0IiwiQnkgV2hlbiIKIjEiLCJJbmNyZWFzZSBkaWdpdGFsIGNvbmZpZGVuY2Ugc2NvcmVzIiwiUHJlL3Bvc3Qgc3VydmV5IiwiMjUlIGltcHJvdmVtZW50IiwiTWFyY2ggMjAyNiIKIjIiLCJUcmFpbiBwYXJ0aWNpcGFudHMgaW4gZW1haWwgYW5kIG9ubGluZSBzZXJ2aWNlcyIsIkNvbXBsZXRpb24gcmF0ZSIsIjgwJSBjb21wbGV0ZSAxMCsgc2Vzc2lvbnMiLCJNYXJjaCAyMDI2IgoiMyIsIkJ1aWxkIHN1c3RhaW5hYmxlIHZvbHVudGVlciBmYWNpbGl0YXRvciBiYXNlIiwiVm9sdW50ZWVycyB0cmFpbmVkIiwiNCBsb2NhbCB2b2x1bnRlZXJzIGNlcnRpZmllZCIsIkRlY2VtYmVyIDIwMjUiCiIiCiJTRUNUSU9OIDQ6IFNDT1BFIgoiSU4gU0NPUEUiLCJPVVQgT0YgU0NPUEUiCiIxMi13ZWVrIHN0cnVjdHVyZWQgcHJvZ3JhbW1lIiwiSGFyZHdhcmUgcHVyY2hhc2UgZm9yIHBhcnRpY2lwYW50cyIKIldlZWtseSAyLWhvdXIgc2Vzc2lvbnMiLCJPbmUtdG8tb25lIGhvbWUgdmlzaXRzIgoiVm9sdW50ZWVyIGZhY2lsaXRhdG9yIHRyYWluaW5nIiwiT25saW5lL3JlbW90ZSBkZWxpdmVyeSIKIlBhcnRuZXJzaGlwIHdpdGggbG9jYWwgbGlicmFyeSIsIlNvY2lhbCBtZWRpYSBtYXJrZXRpbmciCiIiCiJTRUNUSU9OIDU6IEJVREdFVCIKIkJ1ZGdldCBMaW5lIiwiQW1vdW50ICjigqwpIiwiRnVuZGluZyBTb3VyY2UiCiJGYWNpbGl0YXRvciBmZWVzIiwiMywyMDAiLCJEb3JtYW50IEFjY291bnRzIEZ1bmQiCiJFcXVpcG1lbnQgJiBtYXRlcmlhbHMiLCIxLDUwMCIsIkRvcm1hbnQgQWNjb3VudHMgRnVuZCIKIlZvbHVudGVlciB0cmFpbmluZyIsIjgwMCIsIkRvcm1hbnQgQWNjb3VudHMgRnVuZCIKIlZlbnVlIGNvc3RzIiwiNDAwIiwiQ29tbXVuaXR5IEdhcmRlbiAoaW4ta2luZCkiCiJFdmFsdWF0aW9uICYgcmVwb3J0aW5nIiwiNjAwIiwiRG9ybWFudCBBY2NvdW50cyBGdW5kIgoiQ29udGluZ2VuY3kgKDEwJSkiLCI2NTAiLCJEb3JtYW50IEFjY291bnRzIEZ1bmQiCiJUT1RBTCIsIjcsMTUwIiwiIgoiIgoiU0VDVElPTiA2OiBNSUxFU1RPTkVTIgoiUGhhc2UiLCJNaWxlc3RvbmUiLCJUYXJnZXQgRGF0ZSIsIk93bmVyIgoiSW5pdGlhdGlvbiIsIkNoYXJ0ZXIgYXBwcm92ZWQgYnkgYm9hcmQiLCIxNS8wNy8yMDI1IiwiU3BvbnNvciIKIlBsYW5uaW5nIiwiVm9sdW50ZWVyIGZhY2lsaXRhdG9ycyByZWNydWl0ZWQgYW5kIHRyYWluZWQiLCIzMS8wOC8yMDI1IiwiUE0iCiJFeGVjdXRpb24iLCJQcm9ncmFtbWUgbGF1bmNoZWQg4oCUIGNvaG9ydCAxIGJlZ2lucyIsIjAxLzA5LzIwMjUiLCJQTSIKIk1vbml0b3JpbmciLCJNaWQtcG9pbnQgcmV2aWV3IGFuZCBmdW5kZXIgdXBkYXRlIiwiMTUvMTEvMjAyNSIsIlBNIgoiQ2xvc3VyZSIsIkZpbmFsIHJlcG9ydCBzdWJtaXR0ZWQgdG8gZnVuZGVyIiwiMzAvMDQvMjAyNiIsIlBNIgoiIgoiU0VDVElPTiA3OiBLRVkgU1RBS0VIT0xERVJTIgoiU3Rha2Vob2xkZXIiLCJSb2xlIiwiUG93ZXIvSW50ZXJlc3QiLCJDb21tdW5pY2F0aW9uIgoiRG9ybWFudCBBY2NvdW50cyBGdW5kIC8gUG9iYWwiLCJGdW5kZXIiLCJIaWdoL0hpZ2giLCJNb250aGx5IHJlcG9ydHMiCiJCb2FyZCBvZiBEaXJlY3RvcnMiLCJHb3Zlcm5hbmNlIiwiSGlnaC9IaWdoIiwiQm9hcmQgbWVldGluZ3MiCiJQYXJ0aWNpcGFudHMgKDQwIG9sZGVyIGFkdWx0cykiLCJCZW5lZmljaWFyaWVzIiwiTG93L0hpZ2giLCJXZWVrbHkgc2Vzc2lvbnMiCiJMb2NhbCBMaWJyYXJ5IiwiRGVsaXZlcnkgcGFydG5lciIsIk1lZGl1bS9IaWdoIiwiRm9ydG5pZ2h0bHkgbWVldGluZ3MiCiJWb2x1bnRlZXIgRmFjaWxpdGF0b3JzICg0KSIsIkRlbGl2ZXJ5IiwiTG93L0hpZ2giLCJXZWVrbHkgYnJpZWZpbmdzIgoiIgoiU0VDVElPTiA4OiBFQ0NTUiBDSEVDSyIKIlByaW5jaXBsZSIsIlF1ZXN0aW9uIiwiWW91ciBBbnN3ZXIiCiJFdGhpY2FsIiwiRG9lcyB0aGlzIHByb2plY3Qgc2VydmUgYmVuZWZpY2lhcmllcyB3aXRoIGhvbmVzdHkgYW5kIGRpZ25pdHk/IiwiW1lvdXIgcmVzcG9uc2VdIgoiQ29sbGFib3JhdGl2ZSIsIkhhdmUgYmVuZWZpY2lhcmllcyBiZWVuIGNvbnN1bHRlZCBpbiB0aGUgZGVzaWduPyIsIltZb3VyIHJlc3BvbnNlXSIKIkNyZWF0aW5nIiwiRG9lcyB0aGlzIHByb2plY3QgZ2VuZXJhdGUgZ2VudWluZSBuZXcgdmFsdWUgZm9yIHRoZSBjb21tdW5pdHk/IiwiW1lvdXIgcmVzcG9uc2VdIgoiU3VzdGFpbmFibGUiLCJXaGF0IHJlbWFpbnMgd2hlbiB0aGUgZnVuZGluZyBlbmRzPyIsIltZb3VyIHJlc3BvbnNlXSIKIlJlc3VsdHMiLCJIb3cgd2lsbCB3ZSBrbm93IGlmIGl0IHdvcmtlZCDigJQgc3BlY2lmaWMgbWVhc3VyYWJsZSBldmlkZW5jZT8iLCJbWW91ciByZXNwb25zZV0iCiIiCiJTRUNUSU9OIDk6IEFQUFJPVkFMIgoiTmFtZSIsIlJvbGUiLCJTaWduYXR1cmUiLCJEYXRlIgoiW05hbWVdIiwiUHJvamVjdCBTcG9uc29yIiwiIiwiW0RhdGVdIgoiW05hbWVdIiwiUHJvamVjdCBNYW5hZ2VyIiwiIiwiW0RhdGVdIgoiIgoiR2VuZXJhdGVkIGJ5IEdldCBJdCBEb25lIOKAlCBFQ0NTUiBQTSBHdWlkZSBmb3IgSXJpc2ggT3JnYW5pc2F0aW9ucyB8IGRlZWtzaGExOTk2cmxwLmdpdGh1Yi5pby9wbS1ndWlkZSIK" download="Project_Charter_ECCSR.csv" class="btn-pa" style="display:inline-flex;align-items:center;gap:6px;margin-top:1rem;font-size:13px;padding:10px 20px;text-decoration:none">⬇ Download CSV (Excel/Sheets)</a>
             </div>
 
             <!-- Gantt Chart -->
@@ -4781,38 +4756,11 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
               <span class="rc-icon">📊</span>
               <span class="rc-tag" style="background:rgba(79,70,229,.08);color:hsl(244 76% 59%)">Planning</span>
               <div class="rc-title">Gantt Chart Template</div>
-              <p class="rc-text">8-week community event timeline. Tasks mapped to weeks with owner column and RAG status. Pre-filled with a Galway arts festival example.</p>
-              <div style="margin-top:1.25rem;padding:1rem;background:linear-gradient(135deg,#f5f3ff,#eef2ff);border-radius:10px">
-                <!-- Mini Gantt visual -->
-                <div style="font-family:var(--mono);font-size:9px;color:var(--muted);margin-bottom:.5rem;letter-spacing:.1em">PREVIEW — WEEKS 1-8</div>
-                <div style="display:grid;grid-template-columns:120px repeat(8,1fr);gap:3px;font-size:10px">
-                  <div style="font-family:var(--mono);font-size:9px;color:var(--muted)">Task</div>
-                  <div style="font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center">W1</div>
-                  <div style="font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center">W2</div>
-                  <div style="font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center">W3</div>
-                  <div style="font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center">W4</div>
-                  <div style="font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center">W5</div>
-                  <div style="font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center">W6</div>
-                  <div style="font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center">W7</div>
-                  <div style="font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center">W8</div>
-                  <div style="font-size:9px">Planning</div>
-                  <div style="background:hsl(244 76% 59%);border-radius:3px"></div>
-                  <div style="background:hsl(244 76% 59%);border-radius:3px"></div>
-                  <div style="background:rgba(79,70,229,.15);border-radius:3px"></div>
-                  <div></div><div></div><div></div><div></div><div></div>
-                  <div style="font-size:9px">Delivery</div>
-                  <div></div><div></div>
-                  <div style="background:hsl(160 84% 39%);border-radius:3px"></div>
-                  <div style="background:hsl(160 84% 39%);border-radius:3px"></div>
-                  <div style="background:hsl(160 84% 39%);border-radius:3px"></div>
-                  <div></div><div></div><div></div>
-                  <div style="font-size:9px">Review</div>
-                  <div></div><div></div><div></div><div></div><div></div><div></div>
-                  <div style="background:hsl(21 94% 53%);border-radius:3px"></div>
-                  <div style="background:hsl(21 94% 53%);border-radius:3px"></div>
-                </div>
+              <p class="rc-text">12-week project timeline with RAG status. Tasks mapped across weeks with owner column. Pre-filled with a community digital skills project example across all 5 PM phases.</p>
+              <div style="margin-top:1rem;padding:.875rem;background:#f8faff;border-radius:10px;font-family:var(--mono);font-size:10px;color:hsl(244 76% 45%);line-height:1.7">
+                <strong>Includes:</strong> Initiation · Planning · Execution · Monitoring · Closure phases · RAG status · Owner column · Dependencies notes
               </div>
-              <button onclick="(function(){var c=decodeURIComponent('GANTT%20CHART%20TEMPLATE%0A%0AProject%3A%20%5BProject%20Name%5D%0AOwner%3A%20%5BProject%20Manager%5D%0A%0ATASK%20%7C%20OWNER%20%7C%20W1%20%7C%20W2%20%7C%20W3%20%7C%20W4%20%7C%20W5%20%7C%20W6%20%7C%20W7%20%7C%20W8%20%7C%20RAG%20STATUS%0A--------------------------------------------------------------------%0A%5BTask%201%5D%20%7C%20%5BOwner%5D%20%7C%20X%20%7C%20X%20%7C%20%20%7C%20%20%7C%20%20%7C%20%20%7C%20%20%7C%20%20%7C%20GREEN%0A%5BTask%202%5D%20%7C%20%5BOwner%5D%20%7C%20%20%7C%20X%20%7C%20X%20%7C%20X%20%7C%20%20%7C%20%20%7C%20%20%7C%20%20%7C%20GREEN%0A%5BTask%203%5D%20%7C%20%5BOwner%5D%20%7C%20%20%7C%20%20%7C%20%20%7C%20X%20%7C%20X%20%7C%20X%20%7C%20%20%7C%20%20%7C%20AMBER%0A%5BTask%204%5D%20%7C%20%5BOwner%5D%20%7C%20%20%7C%20%20%7C%20%20%7C%20%20%7C%20%20%7C%20X%20%7C%20X%20%7C%20X%20%7C%20GREEN%0A%0ARAG%20KEY%3A%20GREEN%20%3D%20On%20track%20%7C%20AMBER%20%3D%20At%20risk%20%7C%20RED%20%3D%20Off%20track');var b=new Blob([c],{type:'text/plain'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='Gantt_Chart_Template.txt';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(a.href);})()" class="btn-pa" style="display:inline-block;margin-top:1rem;font-size:13px;padding:10px 20px;cursor:pointer;border:none">Download template ↓</button>
+              <a href="data:text/csv;base64,IkdFVCBJVCBET05FIOKAlCBHQU5UVCBDSEFSVCBURU1QTEFURSIsIkVDQ1NSIEZyYW1ld29yayDigJQgSG91Z2h0b24gKDIwMjMpIgoiUHJlLWZpbGxlZCBleGFtcGxlOiBHYWx3YXkgQXJ0cyBGZXN0aXZhbCBDb21tdW5pdHkgUHJvamVjdCAoMTIgd2Vla3MpIgoiUkFHIFN0YXR1czogRyA9IEdyZWVuIChPbiB0cmFjaykgfCBBID0gQW1iZXIgKEF0IHJpc2spIHwgUiA9IFJlZCAoT2ZmIHRyYWNrKSIKIiIKIlRhc2siLCJPd25lciIsIlcxIiwiVzIiLCJXMyIsIlc0IiwiVzUiLCJXNiIsIlc3IiwiVzgiLCJXOSIsIlcxMCIsIlcxMSIsIlcxMiIsIlJBRyBTdGF0dXMiLCJOb3RlcyIKIklOSVRJQVRJT04iLCIiLCwsLCwsLCwsLCwsLCIiCiJEcmFmdCBwcm9qZWN0IGNoYXJ0ZXIiLCJQTSIsIlgiLCJYIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiRyIsIkJvYXJkIGFwcHJvdmFsIG5lZWRlZCIKIlN0YWtlaG9sZGVyIG1hcHBpbmciLCJQTSIsIlgiLCJYIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiRyIsIlVzZSBGcmVlbWFuIFBvd2VyL0ludGVyZXN0IGdyaWQiCiJSaXNrIHJlZ2lzdGVyIHYxIiwiUE0iLCIiLCJYIiwiWCIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIkciLCJJU08gMzEwMDAgZm9ybWF0IgoiUExBTk5JTkciLCIiLCwsLCwsLCwsLCwsLCIiCiJEZXZlbG9wIHdvcmsgcGxhbiIsIlBNIiwiIiwiIiwiWCIsIlgiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCJHIiwiSW5jbHVkZSBXQlMgYnJlYWtkb3duIgoiVm9sdW50ZWVyIHJlY3J1aXRtZW50IiwiQ29vcmRpbmF0b3IiLCIiLCIiLCJYIiwiWCIsIlgiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCJBIiwiMiBvZiA0IHZvbHVudGVlcnMgY29uZmlybWVkIgoiVmVudWUgY29uZmlybWF0aW9uIiwiQWRtaW4iLCIiLCIiLCIiLCJYIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiRyIsIkxpYnJhcnkgcGFydG5lcnNoaXAgYWdyZWVkIgoiQnVkZ2V0IGZpbmFsaXNhdGlvbiIsIkZpbmFuY2UiLCIiLCIiLCIiLCJYIiwiWCIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIkciLCJDb250aW5nZW5jeSBpbmNsdWRlZCIKIkVYRUNVVElPTiIsIiIsLCwsLCwsLCwsLCwsIiIKIkZhY2lsaXRhdG9yIHRyYWluaW5nIiwiQ29vcmRpbmF0b3IiLCIiLCIiLCIiLCIiLCJYIiwiWCIsIiIsIiIsIiIsIiIsIiIsIiIsIkciLCI0IHZvbHVudGVlcnMgYXR0ZW5kaW5nIgoiUHJvZ3JhbW1lIGxhdW5jaCDigJQgV2VlayAxIiwiRmFjaWxpdGF0b3IiLCIiLCIiLCIiLCIiLCIiLCJYIiwiIiwiIiwiIiwiIiwiIiwiIiwiRyIsIjQwIHBhcnRpY2lwYW50cyBlbnJvbGxlZCIKIkRlbGl2ZXJ5IFdlZWtzIDItNCIsIkZhY2lsaXRhdG9yIiwiIiwiIiwiIiwiIiwiIiwiIiwiWCIsIlgiLCJYIiwiIiwiIiwiIiwiRyIsIkVtYWlsIGFuZCBpbnRlcm5ldCBiYXNpY3MiCiJEZWxpdmVyeSBXZWVrcyA1LTgiLCJGYWNpbGl0YXRvciIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIlgiLCJYIiwiWCIsIkEiLCJWaWRlbyBjYWxsaW5nIOKAlCBzb21lIGFic2VuY2UiCiJNT05JVE9SSU5HIiwiIiwsLCwsLCwsLCwsLCwiIgoiV2Vla2x5IGF0dGVuZGFuY2UgbG9nIiwiQWRtaW4iLCJYIiwiWCIsIlgiLCJYIiwiWCIsIlgiLCJYIiwiWCIsIlgiLCJYIiwiWCIsIlgiLCJHIiwiU2hhcmVkIHdpdGggZnVuZGVyIgoiTWlkLXBvaW50IGZ1bmRlciB1cGRhdGUiLCJQTSIsIiIsIiIsIiIsIiIsIiIsIlgiLCIiLCIiLCIiLCIiLCIiLCIiLCJHIiwiU3VibWl0IGJ5IFdlZWsgNiIKIlBhcnRpY2lwYW50IHN1cnZleXMiLCJQTSIsIiIsIiIsIiIsIiIsIiIsIlgiLCIiLCIiLCIiLCIiLCIiLCIiLCJHIiwiUHJlIGFuZCBwb3N0IHN1cnZleXMiCiJDTE9TVVJFIiwiIiwsLCwsLCwsLCwsLCwiIgoiRmluYWwgcHJvZ3JhbW1lIHNlc3Npb24iLCJGYWNpbGl0YXRvciIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIlgiLCJHIiwiQ2VsZWJyYXRpb24gZXZlbnQiCiJFdmFsdWF0aW9uIHJlcG9ydCBkcmFmdCIsIlBNIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiWCIsIkciLCJJbmNsdWRlIHBhcnRpY2lwYW50IGZlZWRiYWNrIgoiRmluYWwgcmVwb3J0IHRvIGZ1bmRlciIsIlBNIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiIiwiRyIsIkR1ZSA0IHdlZWtzIGFmdGVyIGVuZCIKIkxlc3NvbnMgbGVhcm5lZCBzZXNzaW9uIiwiUE0iLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCJHIiwiOTAtbWluIHRlYW0gcmV0cm9zcGVjdGl2ZSIKIiIKIkRFUEVOREVOQ0lFUyIsIk5PVEVTIgoiVm9sdW50ZWVyIHJlY3J1aXRtZW50IG11c3QgY29tcGxldGUgYmVmb3JlIGZhY2lsaXRhdG9yIHRyYWluaW5nIiwiVHVja21hbiDigJQgdGVhbXMgbmVlZCB0aW1lIHRvIGZvcm0gYmVmb3JlIHBlcmZvcm1pbmciCiJCdWRnZXQgZmluYWxpc2F0aW9uIHJlcXVpcmVkIGJlZm9yZSBwcm9jdXJlbWVudCIsIkZpbmFuY2Ugc2lnbi1vZmYgcGVyIGdvdmVybmFuY2UgcmVxdWlyZW1lbnRzIgoiUmlzayByZWdpc3RlciByZXZpZXdlZCBtb250aGx5IHRocm91Z2hvdXQiLCJJU08gMzEwMDA6MjAxOCDigJQgcmlzayBtYW5hZ2VtZW50IGlzIG9uZ29pbmciCiIiCiJHZW5lcmF0ZWQgYnkgR2V0IEl0IERvbmUg4oCUIEVDQ1NSIFBNIEd1aWRlIGZvciBJcmlzaCBPcmdhbmlzYXRpb25zIHwgZGVla3NoYTE5OTZybHAuZ2l0aHViLmlvL3BtLWd1aWRlIgo=" download="Gantt_Chart_Template.csv" class="btn-pa" style="display:inline-flex;align-items:center;gap:6px;margin-top:1rem;font-size:13px;padding:10px 20px;text-decoration:none">⬇ Download CSV (Excel/Sheets)</a>
             </div>
 
             <!-- Risk Register -->
@@ -4820,8 +4768,11 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
               <span class="rc-icon">⚠️</span>
               <span class="rc-tag" style="background:rgba(249,115,22,.08);color:hsl(21 94% 53%)">ISO 31000:2018</span>
               <div class="rc-title">Risk Register</div>
-              <p class="rc-text">Pre-filled with 5 common Irish charity risks — single-funder dependency, key-person risk, GDPR breach, planning delay, and policy change. Written in ISO 31000 language for Pobal applications.</p>
-              <button onclick="(function(){var c=decodeURIComponent('RISK%20REGISTER%20%E2%80%94%20ISO%2031000%3A2018%0A%0AProject%3A%20%5BProject%20Name%5D%20%7C%20Date%3A%20%7C%20Reviewed%20by%3A%0A%0AID%20%7C%20Risk%20Description%20%7C%20Category%20%7C%20Likelihood(1-5)%20%7C%20Impact(1-5)%20%7C%20Rating%20%7C%20Response%20%7C%20Owner%20%7C%20Contingency%0A--------------------------------------------------------------------------------------------------------------------------------------%0AR01%20%7C%20Single%20funder%20withdraws%20funding%20mid-project%20%7C%20Financial%20%7C%203%20%7C%205%20%7C%2015-HIGH%20%7C%20Reduce%20%7C%20Director%20%7C%20Apply%20to%202%20alternative%20funders%20by%20Month%202%0AR02%20%7C%20Key%20project%20worker%20leaves%20%7C%20People%20%7C%203%20%7C%204%20%7C%2012-HIGH%20%7C%20Reduce%20%7C%20Manager%20%7C%20Document%20all%20processes%3B%20cross-train%20one%20other%20person%0AR03%20%7C%20GDPR%20breach%20through%20staff%20use%20of%20personal%20email%20%7C%20Legal%20%7C%203%20%7C%204%20%7C%2012-HIGH%20%7C%20Reduce%20%7C%20Data%20Officer%20%7C%20Enforce%20secure%20email%20policy%3B%20staff%20training%20completed%0AR04%20%7C%20Planning%20permission%20delayed%20%7C%20External%20%7C%202%20%7C%203%20%7C%206-MEDIUM%20%7C%20Accept%20%7C%20PM%20%7C%20Build%2010%25%20schedule%20buffer%3B%20brief%20funder%20early%0AR05%20%7C%20Government%20policy%20change%20affects%20programme%20eligibility%20%7C%20Political%20%7C%201%20%7C%205%20%7C%205-MEDIUM%20%7C%20Monitor%20%7C%20Director%20%7C%20Monitor%20Pobal%20and%20DRCD%20announcements%20monthly%0A%0ARATING%20KEY%3A%201-4%20LOW%20%7C%205-9%20MEDIUM%20%7C%2010-25%20HIGH%0ARESPONSES%3A%20Avoid%20%7C%20Reduce%20%7C%20Transfer%20%7C%20Accept');var b=new Blob([c],{type:'text/plain'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='Risk_Register_Template.txt';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(a.href);})()" class="btn-pa" style="display:inline-block;margin-top:1rem;font-size:13px;padding:10px 20px;cursor:pointer;border:none">Download template ↓</button>
+              <p class="rc-text">Pre-filled with 8 common Irish charity risks including single-funder dependency, GDPR breach, key-person risk, and one opportunity risk. Written in ISO 31000 language — Pobal-ready.</p>
+              <div style="margin-top:1rem;padding:.875rem;background:#fff8f5;border-radius:10px;font-family:var(--mono);font-size:10px;color:hsl(21 94% 40%);line-height:1.7">
+                <strong>Includes:</strong> 5×5 scoring matrix · 8 pre-filled risks · Response strategies · Owner column · Contingency plans · Rating key
+              </div>
+              <a href="data:text/csv;base64,IkdFVCBJVCBET05FIOKAlCBSSVNLIFJFR0lTVEVSIiwiSVNPIDMxMDAwOjIwMTggRm9ybWF0IgoiRUNDU1IgRnJhbWV3b3JrIOKAlCBIb3VnaHRvbiAoMjAyMykiCiJQcmUtZmlsbGVkIGV4YW1wbGU6IENvbW11bml0eSBEaWdpdGFsIExpdGVyYWN5IFByb2plY3Qg4oCUIFBvYmFsIFNJQ0FQIEFwcGxpY2F0aW9uIgoiIgoiUmlzayBSZWdpc3RlciBJbmZvcm1hdGlvbiIKIlByb2plY3QgTmFtZSIsIltZb3VyIFByb2plY3QgTmFtZV0iCiJPcmdhbmlzYXRpb24iLCJbWW91ciBPcmdhbmlzYXRpb25dIgoiUHJlcGFyZWQgYnkiLCJbWW91ciBOYW1lXSIKIkRhdGUiLCJbRGF0ZV0iCiJSZXZpZXcgRnJlcXVlbmN5IiwiTW9udGhseSIKIk5leHQgUmV2aWV3IERhdGUiLCJbRGF0ZV0iCiIiCiJSQVRJTkcgU0NBTEUiCiJTY29yZSIsIkxpa2VsaWhvb2QiLCJTY29yZSIsIkltcGFjdCIKIjEiLCJSYXJlICg8IDEwJSBjaGFuY2UpIiwiMSIsIk5lZ2xpZ2libGUg4oCUIG5vIGVmZmVjdCBvbiBvdXRjb21lcyIKIjIiLCJVbmxpa2VseSAoMTAtMzAlKSIsIjIiLCJNaW5vciDigJQgc2xpZ2h0IGRlbGF5IG9yIGNvc3QiCiIzIiwiUG9zc2libGUgKDMwLTUwJSkiLCIzIiwiTW9kZXJhdGUg4oCUIG5vdGljZWFibGUgaW1wYWN0IG9uIGRlbGl2ZXJ5IgoiNCIsIkxpa2VseSAoNTAtNzAlKSIsIjQiLCJNYWpvciDigJQgc2lnbmlmaWNhbnQgZGVsYXkgb3IgYnVkZ2V0IGltcGFjdCIKIjUiLCJBbG1vc3QgY2VydGFpbiAoPjcwJSkiLCI1IiwiQ3JpdGljYWwg4oCUIHByb2plY3QgZmFpbHMgb3IgbXVzdCBiZSByZWRlc2lnbmVkIgoiIgoiUkFUSU5HID0gTGlrZWxpaG9vZCDDlyBJbXBhY3QgfCAxLTQ6IExPVyB8IDUtOTogTUVESVVNIHwgMTAtMjU6IEhJR0giCiIiCiJSSVNLIFJFR0lTVEVSIgoiSUQiLCJSaXNrIERlc2NyaXB0aW9uIiwiQ2F0ZWdvcnkiLCJMaWtlbGlob29kICgxLTUpIiwiSW1wYWN0ICgxLTUpIiwiUmF0aW5nIiwiUmF0aW5nIExldmVsIiwiUmVzcG9uc2UgU3RyYXRlZ3kiLCJSZXNwb25zZSBBY3Rpb24iLCJPd25lciIsIkNvbnRpbmdlbmN5IFBsYW4iLCJTdGF0dXMiLCJMYXN0IFJldmlld2VkIgoiUjAxIiwiU2luZ2xlIGZ1bmRlciAoUG9iYWwpIHdpdGhkcmF3cyBvciByZWR1Y2VzIGZ1bmRpbmcgbWlkLXByb2plY3QiLCJGaW5hbmNpYWwiLCIzIiwiNSIsIjE1IiwiSElHSCIsIlJlZHVjZSIsIkFwcGx5IHRvIDIgYWx0ZXJuYXRpdmUgZnVuZGVycyAoTEVPIC8gQ29tbXVuaXR5IEZvdW5kYXRpb24pIGJ5IE1vbnRoIDIiLCJEaXJlY3RvciIsIklkZW50aWZ5IG1pbmltdW0gdmlhYmxlIHByb2dyYW1tZSB0aGF0IGNhbiBjb250aW51ZSBvbiA1MCUgYnVkZ2V0IiwiT3BlbiIsIltEYXRlXSIKIlIwMiIsIktleSBwcm9qZWN0IHdvcmtlciAvIGZhY2lsaXRhdG9yIGxlYXZlcyBkdXJpbmcgZGVsaXZlcnkiLCJQZW9wbGUiLCIzIiwiNCIsIjEyIiwiSElHSCIsIlJlZHVjZSIsIkRvY3VtZW50IGFsbCBzZXNzaW9uIHBsYW5zOyBjcm9zcy10cmFpbiAxIGJhY2t1cCBmYWNpbGl0YXRvciBiZWZvcmUgbGF1bmNoIiwiUE0iLCJSZWNydWl0IHJlcGxhY2VtZW50IHdpdGhpbiA0IHdlZWtzIHVzaW5nIGV4aXN0aW5nIHZvbHVudGVlciBwb29sIiwiT3BlbiIsIltEYXRlXSIKIlIwMyIsIkdEUFIgYnJlYWNoIOKAlCBwYXJ0aWNpcGFudCBkYXRhIGhhbmRsZWQgdmlhIHBlcnNvbmFsIGVtYWlsIG9yIHVuc2VjdXJlZCBzcHJlYWRzaGVldCIsIkxlZ2FsIC8gRGF0YSIsIjMiLCI0IiwiMTIiLCJISUdIIiwiUmVkdWNlIiwiRW5mb3JjZSBkYXRhIGhhbmRsaW5nIHBvbGljeTsgbWFuZGF0b3J5IHN0YWZmIGJyaWVmaW5nIGJlZm9yZSBkYXRhIGNvbGxlY3Rpb24gYmVnaW5zIiwiRGF0YSBPZmZpY2VyIiwiTm90aWZ5IERQQyB3aXRoaW4gNzIgaG91cnMgYXMgcmVxdWlyZWQ7IGluZm9ybSBhZmZlY3RlZCBwYXJ0aWNpcGFudHMiLCJPcGVuIiwiW0RhdGVdIgoiUjA0IiwiUGxhbm5pbmcgcGVybWlzc2lvbiBmb3IgdmVudWUgZXh0ZW5zaW9uIGRlbGF5ZWQiLCJFeHRlcm5hbCIsIjIiLCIzIiwiNiIsIk1FRElVTSIsIkFjY2VwdCIsIkJ1aWxkIDEwJSBzY2hlZHVsZSBidWZmZXIgaW50byBwcm9ncmFtbWUgcGxhbjsgYnJpZWYgZnVuZGVyIHByb2FjdGl2ZWx5IiwiUE0iLCJVc2UgbGlicmFyeSBhcyBhbHRlcm5hdGl2ZSB2ZW51ZSDigJQgY29uZmlybWVkIGFzIGJhY2t1cCIsIk9wZW4iLCJbRGF0ZV0iCiJSMDUiLCJHb3Zlcm5tZW50IHBvbGljeSBjaGFuZ2UgYWZmZWN0cyBwcm9ncmFtbWUgZWxpZ2liaWxpdHkgY3JpdGVyaWEiLCJQb2xpdGljYWwiLCIxIiwiNSIsIjUiLCJNRURJVU0iLCJNb25pdG9yIiwiTW9uaXRvciBQb2JhbCwgRFJDRCwgYW5kIERlcGFydG1lbnQgb2YgU29jaWFsIFByb3RlY3Rpb24gdXBkYXRlcyBtb250aGx5IiwiRGlyZWN0b3IiLCJTZWVrIHdyaXR0ZW4gY29uZmlybWF0aW9uIG9mIGVsaWdpYmlsaXR5IGZyb20gUG9iYWwgYmVmb3JlIHNwZW5kIiwiT3BlbiIsIltEYXRlXSIKIlIwNiIsIkxvdyBwYXJ0aWNpcGFudCByZWNydWl0bWVudCDigJQgcHJvZ3JhbW1lIHVuZGVyc3Vic2NyaWJlZCIsIlJlcHV0YXRpb25hbCIsIjIiLCIzIiwiNiIsIk1FRElVTSIsIlJlZHVjZSIsIkJlZ2luIGNvbW11bml0eSBvdXRyZWFjaCA4IHdlZWtzIGJlZm9yZSBsYXVuY2g7IHBhcnRuZXIgd2l0aCBHUCBzdXJnZXJpZXMgYW5kIGxpYnJhcmllcyIsIkNvb3JkaW5hdG9yIiwiUmVkdWNlIGdyb3VwIHNpemUgYW5kIGV4dGVuZCBwcm9ncmFtbWUgdG8gc2Vjb25kIGNvaG9ydCIsIk9wZW4iLCJbRGF0ZV0iCiJSMDciLCJWb2x1bnRlZXIgZmFjaWxpdGF0b3JzIG5vdCBhZGVxdWF0ZWx5IHRyYWluZWQgYmVmb3JlIGxhdW5jaCIsIlBlb3BsZSIsIjIiLCI0IiwiOCIsIk1FRElVTSIsIlJlZHVjZSIsIlNjaGVkdWxlIDItZGF5IHRyYWluaW5nIHdpdGggY2VydGlmaWVkIGRpZ2l0YWwgc2tpbGxzIHRyYWluZXIgNCB3ZWVrcyBwcmUtbGF1bmNoIiwiUE0iLCJEZWxheSBsYXVuY2ggYnkgMiB3ZWVrcyBpZiB0cmFpbmluZyBub3QgY29tcGxldGUg4oCUIG5vdGlmeSBmdW5kZXIgaW1tZWRpYXRlbHkiLCJPcGVuIiwiW0RhdGVdIgoiUjA4IiwiT1BQT1JUVU5JVFk6IEFkZGl0aW9uYWwgZnVuZGluZyBhdmFpbGFibGUgZnJvbSBMRU8gSW5ub3ZhdGlvbiBGdW5kIiwiT3Bwb3J0dW5pdHkiLCIzIiwiNCIsIjEyIiwiSElHSCIsIkV4cGxvaXQiLCJTdWJtaXQgZXhwcmVzc2lvbiBvZiBpbnRlcmVzdCBieSBRMSBkZWFkbGluZSIsIkRpcmVjdG9yIiwiUHJlcGFyZSBvdXRsaW5lIHByb3Bvc2FsIGZvciBleHBhbmRlZCBwcm9ncmFtbWUgaW4geWVhciAyIiwiT3BlbiIsIltEYXRlXSIKIiIKIlJFU1BPTlNFIFNUUkFURUdJRVMgKElTTyAzMTAwMDoyMDE4KSIKIkF2b2lkIiwiQ2hhbmdlIHRoZSBwbGFuIHRvIGVsaW1pbmF0ZSB0aGUgcmlzayBlbnRpcmVseSIKIlJlZHVjZSIsIlRha2UgYWN0aW9uIHRvIGxvd2VyIHRoZSBsaWtlbGlob29kIG9yIGltcGFjdCAob3IgYm90aCkiCiJUcmFuc2ZlciIsIk1vdmUgdGhlIHJpc2sgdG8gYSB0aGlyZCBwYXJ0eSAoaW5zdXJhbmNlLCBjb250cmFjdCwgd2FycmFudHkpIgoiQWNjZXB0IiwiQWNrbm93bGVkZ2UgdGhlIHJpc2sgYW5kIHByZXBhcmUgYSBjb250aW5nZW5jeSDigJQgdXNlIHdoZW4gY29zdCBvZiByZXNwb25zZSBleGNlZWRzIGJlbmVmaXQiCiJFeHBsb2l0IChvcHBvcnR1bml0aWVzKSIsIlRha2UgZGVsaWJlcmF0ZSBhY3Rpb24gdG8gbWFrZSBhIHBvc2l0aXZlIHJpc2sgbW9yZSBsaWtlbHkgdG8gb2NjdXIiCiIiCiJFQ0NTUiBOT1RFIiwiRXRoaWNhbCByaXNrIG1hbmFnZW1lbnQgYXNrcyBmaXJzdDogd2hhdCBpcyB0aGUgcmlzayB0byB0aGUgYmVuZWZpY2lhcmllcyBpZiB0aGUgcHJvamVjdCBmYWlscz8gUmlzayBtYW5hZ2VtZW50IGlzIGFuIGFjdCBvZiBjYXJlLCBub3QgYSBjb21wbGlhbmNlIHRhc2suIgoiIgoiR2VuZXJhdGVkIGJ5IEdldCBJdCBEb25lIOKAlCBFQ0NTUiBQTSBHdWlkZSBmb3IgSXJpc2ggT3JnYW5pc2F0aW9ucyB8IGRlZWtzaGExOTk2cmxwLmdpdGh1Yi5pby9wbS1ndWlkZSIK" download="Risk_Register_ISO31000.csv" class="btn-pa" style="display:inline-flex;align-items:center;gap:6px;margin-top:1rem;font-size:13px;padding:10px 20px;text-decoration:none">⬇ Download CSV (Excel/Sheets)</a>
             </div>
 
             <!-- RACI Matrix -->
@@ -4829,8 +4780,11 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
               <span class="rc-icon">👥</span>
               <span class="rc-tag" style="background:rgba(124,58,237,.08);color:hsl(263 70% 55%)">Teams</span>
               <div class="rc-title">RACI Matrix</div>
-              <p class="rc-text">Clarifies who is Responsible, Accountable, Consulted, and Informed for each project task. One Accountable person per task — never two. Pre-filled with a Pobal-funded community project example.</p>
-              <button onclick="(function(){var c=decodeURIComponent('RACI%20MATRIX%0A%0AProject%3A%20%5BProject%20Name%5D%0A%0ARACI%20KEY%3A%20R%20%3D%20Responsible%20(does%20the%20work)%20%7C%20A%20%3D%20Accountable%20(ONE%20person%20only%2C%20owns%20outcome)%20%7C%20C%20%3D%20Consulted%20(input%20needed)%20%7C%20I%20%3D%20Informed%20(told%20of%20outcome)%0A%0ATASK%20%7C%20PROJECT%20MANAGER%20%7C%20DIRECTOR%20%7C%20FINANCE%20%7C%20VOLUNTEERS%20%7C%20FUNDER%0A------------------------------------------------------------------------%0AProject%20Charter%20%7C%20R%20%7C%20A%20%7C%20C%20%7C%20I%20%7C%20I%0ABudget%20Management%20%7C%20R%20%7C%20C%20%7C%20A%20%7C%20-%20%7C%20I%0ARisk%20Register%20%7C%20A%2CR%20%7C%20C%20%7C%20C%20%7C%20-%20%7C%20I%0AStakeholder%20Comms%20%7C%20R%20%7C%20A%20%7C%20I%20%7C%20I%20%7C%20C%0AProgramme%20Delivery%20%7C%20C%20%7C%20I%20%7C%20I%20%7C%20A%2CR%20%7C%20I%0AFunder%20Reporting%20%7C%20R%20%7C%20A%20%7C%20C%20%7C%20-%20%7C%20I%0A%0ARULE%3A%20Only%20ONE%20person%20can%20be%20Accountable%20(A)%20per%20task.%20If%20two%20people%20are%20Accountable%2C%20no%20one%20is.');var b=new Blob([c],{type:'text/plain'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='RACI_Matrix_Template.txt';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(a.href);})()" class="btn-pa" style="display:inline-block;margin-top:1rem;font-size:13px;padding:10px 20px;cursor:pointer;border:none">Download template ↓</button>
+              <p class="rc-text">Clarifies who is Responsible, Accountable, Consulted, and Informed for 20 project tasks across all 5 PM phases. Pre-filled with a Pobal-funded community project. One Accountable per task — always.</p>
+              <div style="margin-top:1rem;padding:.875rem;background:#f8f5ff;border-radius:10px;font-family:var(--mono);font-size:10px;color:hsl(263 70% 40%);line-height:1.7">
+                <strong>Includes:</strong> 20 tasks across all phases · 7 role columns · RACI key · Critical rule reminder · Notes column
+              </div>
+              <a href="data:text/csv;base64,IkdFVCBJVCBET05FIOKAlCBSQUNJIE1BVFJJWCIsIkVDQ1NSIEZyYW1ld29yayDigJQgSG91Z2h0b24gKDIwMjMpIgoiUHJlLWZpbGxlZCBleGFtcGxlOiBQb2JhbCBTSUNBUCBDb21tdW5pdHkgV2VsbGJlaW5nIFByb2plY3QiCiIiCiJSQUNJIEtFWSIKIlIiLCJSZXNwb25zaWJsZSIsIlRoZSBwZXJzb24gd2hvIGRvZXMgdGhlIHdvcmsuIE11bHRpcGxlIHBlb3BsZSBjYW4gYmUgUmVzcG9uc2libGUuIgoiQSIsIkFjY291bnRhYmxlIiwiVGhlIHBlcnNvbiB3aG8gb3ducyB0aGUgb3V0Y29tZS4gRVhBQ1RMWSBPTkUgcGVyIHRhc2sg4oCUIG5ldmVyIHR3by4iCiJDIiwiQ29uc3VsdGVkIiwiTXVzdCBiZSBhc2tlZCBmb3IgaW5wdXQgYmVmb3JlIGRlY2lzaW9ucyBhcmUgbWFkZS4gVHdvLXdheSBjb21tdW5pY2F0aW9uLiIKIkkiLCJJbmZvcm1lZCIsIlRvbGQgd2hhdCBoYXBwZW5lZCBhZnRlciB0aGUgZmFjdC4gT25lLXdheSBjb21tdW5pY2F0aW9uLiIKIi0iLCJOb3QgaW52b2x2ZWQiLCJObyByb2xlIGluIHRoaXMgdGFzay4iCiIiCiJDUklUSUNBTCBSVUxFOiBJZiB0d28gcGVvcGxlIGFyZSBsaXN0ZWQgYXMgQWNjb3VudGFibGUgZm9yIHRoZSBzYW1lIHRhc2ssIE5PIE9ORSBpcyB0cnVseSBhY2NvdW50YWJsZS4iCiIiCiJSQUNJIE1BVFJJWCIKIlRhc2sgLyBEZWxpdmVyYWJsZSIsIlByb2plY3QgTWFuYWdlciIsIkRpcmVjdG9yIC8gQ0VPIiwiRmluYW5jZSBPZmZpY2VyIiwiUHJvZ3JhbW1lIENvb3JkaW5hdG9yIiwiVm9sdW50ZWVyIEZhY2lsaXRhdG9ycyIsIkZ1bmRlciAoUG9iYWwpIiwiQm9hcmQgb2YgRGlyZWN0b3JzIiwiTm90ZXMiCiJQUk9KRUNUIElOSVRJQVRJT04iLCwsLCwsLCIiCiJEcmFmdCBhbmQgYXBwcm92ZSBQcm9qZWN0IENoYXJ0ZXIiLCJSIiwiQSIsIkMiLCJJIiwiSSIsIkkiLCJDIiwiQm9hcmQgc2lnbi1vZmYgcmVxdWlyZWQiCiJTdGFrZWhvbGRlciBtYXBwaW5nIiwiQSxSIiwiQyIsIkkiLCJDIiwiSSIsIkkiLCJJIiwiVXNlIEZyZWVtYW4gUG93ZXIvSW50ZXJlc3QgZ3JpZCIKIlJpc2sgUmVnaXN0ZXIgdjEiLCJBLFIiLCJDIiwiQyIsIkkiLCJJIiwiSSIsIkkiLCJJU08gMzEwMDAgZm9ybWF0IGZvciBmdW5kZXIiCiJCdWRnZXQgc2lnbi1vZmYiLCJSIiwiQSIsIkMiLCJJIiwiSSIsIkkiLCJDIiwiRmluYW5jZSBhbmQgYm9hcmQgYXBwcm92YWwgbmVlZGVkIgoiUFJPSkVDVCBQTEFOTklORyIsLCwsLCwsIiIKIldvcmsgQnJlYWtkb3duIFN0cnVjdHVyZSIsIkEsUiIsIkMiLCJJIiwiQyIsIkkiLCJJIiwiSSIsIkJyZWFrIGludG8gcGhhc2VzIGFuZCB0YXNrcyIKIlZvbHVudGVlciByZWNydWl0bWVudCIsIkMiLCJJIiwiSSIsIkEsUiIsIkkiLCJJIiwiSSIsIkNvb3JkaW5hdG9yIG93bnMgdGhpcyIKIlZlbnVlIGFuZCBsb2dpc3RpY3MiLCJDIiwiSSIsIkkiLCJBLFIiLCJDIiwiSSIsIkkiLCJDb25maXJtIGJhY2t1cCB2ZW51ZSB0b28iCiJQcm9jdXJlbWVudCAobWF0ZXJpYWxzKSIsIlIiLCJDIiwiQSIsIkMiLCJJIiwiSSIsIkkiLCJGaW5hbmNlIG93bnMgc3BlbmQgYXBwcm92YWwiCiJQUk9KRUNUIEVYRUNVVElPTiIsLCwsLCwsIiIKIkZhY2lsaXRhdG9yIHRyYWluaW5nIGRlbGl2ZXJ5IiwiQyIsIkkiLCJJIiwiQSIsIlIiLCJJIiwiSSIsIlZvbHVudGVlcnMgZGVsaXZlciB1bmRlciBjb29yZGluYXRvciIKIldlZWtseSBwcm9ncmFtbWUgc2Vzc2lvbnMiLCJJIiwiSSIsIkkiLCJBIiwiUiIsIkkiLCJJIiwiRmFjaWxpdGF0b3JzIGRvIHRoZSB3b3JrIgoiQXR0ZW5kYW5jZSBhbmQgZGF0YSByZWNvcmRpbmciLCJDIiwiSSIsIkkiLCJBLFIiLCJDIiwiSSIsIkkiLCJHRFBSIGNvbXBsaWFuY2UgcmVxdWlyZWQiCiJQYXJ0aWNpcGFudCBjb21tdW5pY2F0aW9ucyIsIkkiLCJJIiwiSSIsIkEsUiIsIkMiLCJJIiwiSSIsIk5ld3NsZXR0ZXIsIHBob25lIGNhbGxzIgoiTU9OSVRPUklORyAmIFJFUE9SVElORyIsLCwsLCwsIiIKIldlZWtseSBQTSBzdGF0dXMgdXBkYXRlIiwiQSxSIiwiSSIsIkkiLCJDIiwiSSIsIkkiLCJJIiwiU2hhcmUgd2l0aCBkaXJlY3RvciB3ZWVrbHkiCiJNb250aGx5IGZ1bmRlciByZXBvcnQgKFBvYmFsKSIsIlIiLCJBIiwiQyIsIkMiLCJJIiwiSSIsIkkiLCJGdW5kZXIgcmVjZWl2ZXMg4oCUIG5vdCBhcHByb3ZlcyIKIlJpc2sgcmVnaXN0ZXIgcmV2aWV3IiwiQSxSIiwiQyIsIkkiLCJDIiwiSSIsIkkiLCJJIiwiTW9udGhseSDigJQgdXBkYXRlIHN0YXR1cyBjb2x1bW4iCiJCb2FyZCBwcm9ncmVzcyByZXBvcnQiLCJSIiwiQSIsIkkiLCJDIiwiSSIsIkkiLCJJIiwiUXVhcnRlcmx5IGJvYXJkIG1lZXRpbmciCiJNaWQtcHJvamVjdCBmdW5kZXIgdXBkYXRlIiwiUiIsIkEiLCJDIiwiSSIsIkkiLCJDIiwiSSIsIlJlcXVpcmVkIHVuZGVyIFNJQ0FQIHRlcm1zIgoiQ0xPU1VSRSIsLCwsLCwsIiIKIkZpbmFsIHByb2dyYW1tZSBzZXNzaW9uIiwiSSIsIkkiLCJJIiwiQSIsIlIiLCJJIiwiSSIsIkNlbGVicmF0aW9uIC8gZ3JhZHVhdGlvbiBldmVudCIKIlBhcnRpY2lwYW50IG91dGNvbWUgc3VydmV5cyIsIlIiLCJJIiwiSSIsIkEiLCJDIiwiSSIsIkkiLCJQcmUgYW5kIHBvc3QgY29tcGFyaXNvbiIKIkxlc3NvbnMgbGVhcm5lZCByZXRyb3NwZWN0aXZlIiwiQSxSIiwiQyIsIkkiLCJDIiwiQyIsIkkiLCJJIiwiOTAtbWludXRlIHRlYW0gc2Vzc2lvbiIKIkZpbmFsIGZpbmFuY2lhbCByZXBvcnQiLCJSIiwiQSIsIkEiLCJJIiwiSSIsIkMiLCJJIiwiRmluYW5jZSBhbmQgUE0gYm90aCByZXNwb25zaWJsZSIKIkZpbmFsIGZ1bmRlciByZXBvcnQiLCJSIiwiQSIsIkMiLCJDIiwiSSIsIkMiLCJJIiwiU3VibWl0IHdpdGhpbiA0IHdlZWtzIG9mIGNsb3NlIgoiQm9hcmQgY2xvc2Utb3V0IHJlcG9ydCIsIlIiLCJBIiwiSSIsIkMiLCJJIiwiSSIsIkMiLCJJbmNsdWRlIGxlc3NvbnMgYW5kIHJlY29tbWVuZGF0aW9ucyIKIiIKIkdlbmVyYXRlZCBieSBHZXQgSXQgRG9uZSDigJQgRUNDU1IgUE0gR3VpZGUgZm9yIElyaXNoIE9yZ2FuaXNhdGlvbnMgfCBkZWVrc2hhMTk5NnJscC5naXRodWIuaW8vcG0tZ3VpZGUiCg==" download="RACI_Matrix_Template.csv" class="btn-pa" style="display:inline-flex;align-items:center;gap:6px;margin-top:1rem;font-size:13px;padding:10px 20px;text-decoration:none">⬇ Download CSV (Excel/Sheets)</a>
             </div>
 
             <!-- Stakeholder Map -->
@@ -4838,8 +4792,11 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
               <span class="rc-icon">🗺️</span>
               <span class="rc-tag" style="background:rgba(236,72,153,.08);color:hsl(330 81% 60%)">Freeman (1984)</span>
               <div class="rc-title">Stakeholder Map</div>
-              <p class="rc-text">Power/Interest grid using Freeman's stakeholder theory. Pre-filled with a typical Donegal LEO-funded SME project. Includes communication frequency for each quadrant.</p>
-              <button onclick="(function(){var c=decodeURIComponent('STAKEHOLDER%20MAP%20%E2%80%94%20Freeman%20(1984)%20Power%2FInterest%20Grid%0A%0AProject%3A%20%5BProject%20Name%5D%0A%0AQUADRANT%201%3A%20HIGH%20POWER%20%7C%20HIGH%20INTEREST%20%E2%80%94%20MANAGE%20CLOSELY%0A%5BStakeholder%5D%20%7C%20Role%20%7C%20Their%20concern%20%7C%20Frequency%3A%20Weekly%20%7C%20Format%3A%20Personal%20meeting%0A%0AQUADRANT%202%3A%20HIGH%20POWER%20%7C%20LOW%20INTEREST%20%E2%80%94%20KEEP%20SATISFIED%0A%5BStakeholder%5D%20%7C%20Role%20%7C%20Their%20concern%20%7C%20Frequency%3A%20Monthly%20%7C%20Format%3A%20Strategic%20update%20email%0A%0AQUADRANT%203%3A%20LOW%20POWER%20%7C%20HIGH%20INTEREST%20%E2%80%94%20KEEP%20INFORMED%0A%5BStakeholder%5D%20%7C%20Role%20%7C%20Their%20concern%20%7C%20Frequency%3A%20Quarterly%20%7C%20Format%3A%20Newsletter%0A%0AQUADRANT%204%3A%20LOW%20POWER%20%7C%20LOW%20INTEREST%20%E2%80%94%20MONITOR%0A%5BStakeholder%5D%20%7C%20Role%20%7C%20Frequency%3A%20As%20needed%0A%0ANOTE%3A%20Beneficiaries%20most%20commonly%20fall%20in%20Q3.%20The%20Charities%20Governance%20Code%20(2021)%20requires%20their%20voice%20be%20actively%20sought%20regardless%20of%20quadrant.');var b=new Blob([c],{type:'text/plain'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='Stakeholder_Map_Template.txt';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(a.href);})()" class="btn-pa" style="display:inline-block;margin-top:1rem;font-size:13px;padding:10px 20px;cursor:pointer;border:none">Download template ↓</button>
+              <p class="rc-text">Full Power/Interest grid with 10 pre-filled stakeholders across all 4 quadrants. Donegal LEO-funded arts project example. Includes communication frequency, format, risk, and ECCSR note per stakeholder.</p>
+              <div style="margin-top:1rem;padding:.875rem;background:#fff0f8;border-radius:10px;font-family:var(--mono);font-size:10px;color:hsl(330 81% 40%);line-height:1.7">
+                <strong>Includes:</strong> All 4 quadrants · 10 stakeholders · Power/Interest · Comms frequency · Risk · ECCSR lens · Charities Governance Code note
+              </div>
+              <a href="data:text/csv;base64,IkdFVCBJVCBET05FIOKAlCBTVEFLRUhPTERFUiBNQVAiLCJGcmVlbWFuICgxOTg0KSBQb3dlci9JbnRlcmVzdCBHcmlkIgoiRUNDU1IgRnJhbWV3b3JrIOKAlCBIb3VnaHRvbiAoMjAyMykiCiJQcmUtZmlsbGVkIGV4YW1wbGU6IERvbmVnYWwgTEVPLWZ1bmRlZCBDb21tdW5pdHkgQXJ0cyBQcm9qZWN0IgoiIgoiUE9XRVIvSU5URVJFU1QgR1JJRCBFWFBMQUlORUQiCiJRdWFkcmFudCIsIlBvd2VyIiwiSW50ZXJlc3QiLCJTdHJhdGVneSIsIldoeSIKIlExIiwiSGlnaCIsIkhpZ2giLCJNQU5BR0UgQ0xPU0VMWSIsIlJlZ3VsYXIgcGVyc29uYWwgZW5nYWdlbWVudC4gTWlzc2luZyB0aGlzIGdyb3VwIGNhdXNlcyBsYXRlLXN0YWdlIGZhaWx1cmUuIgoiUTIiLCJIaWdoIiwiTG93IiwiS0VFUCBTQVRJU0ZJRUQiLCJTdHJhdGVnaWMgdXBkYXRlcy4gVG9vIG11Y2ggaW5mbyBmcnVzdHJhdGVzOyB0b28gbGl0dGxlIHJpc2tzIG5lZ2F0aXZlIHVzZSBvZiBwb3dlci4iCiJRMyIsIkxvdyIsIkhpZ2giLCJLRUVQIElORk9STUVEIiwiWW91ciBhZHZvY2F0ZXMg4oCUIG9yIGNyaXRpY3MuIEJlbmVmaWNpYXJpZXMgb2Z0ZW4gc2l0IGhlcmUuIEdvdmVybmFuY2UgQ29kZSByZXF1aXJlcyB0aGVpciB2b2ljZS4iCiJRNCIsIkxvdyIsIkxvdyIsIk1PTklUT1IiLCJNaW5pbWFsIG1hbmFnZW1lbnQuIFdhdGNoIGZvciBwb3NpdGlvbiBjaGFuZ2VzLiIKIiIKIlNUQUtFSE9MREVSIE1BUCIKIlN0YWtlaG9sZGVyIiwiT3JnYW5pc2F0aW9uIC8gUm9sZSIsIlF1YWRyYW50IiwiUG93ZXIgTGV2ZWwiLCJJbnRlcmVzdCBMZXZlbCIsIlByaW1hcnkgQ29uY2VybiBBYm91dCBUaGlzIFByb2plY3QiLCJDb21tdW5pY2F0aW9uIEZyZXF1ZW5jeSIsIkNvbW11bmljYXRpb24gRm9ybWF0IiwiS2V5IFJlbGF0aW9uc2hpcCBSaXNrIiwiRUNDU1IgTm90ZSIKIlFVQURSQU5UIDEg4oCUIE1BTkFHRSBDTE9TRUxZIiwsLCwsLCwsLCIiCiJQb2JhbCBQcm9ncmFtbWUgT2ZmaWNlciIsIkZ1bmRlciDigJQgU0lDQVAiLCJRMSIsIkhpZ2giLCJIaWdoIiwiRnVuZHMgdXNlZCBjb3JyZWN0bHk7IEVDQ1NSIG91dGNvbWVzIGV2aWRlbmNlZDsgcmVwb3J0aW5nIG9uIHRpbWUiLCJNb250aGx5IiwiV3JpdHRlbiByZXBvcnQgKyBwaG9uZSBjYWxsIiwiRGVsYXlzIG9yIHVuZGVyc3BlbmQgdHJpZ2dlciBmb3JtYWwgcmV2aWV3IiwiUmVzdWx0czogZXZpZGVuY2Ugb2YgaW1wYWN0IHJlcXVpcmVkIgoiQ0VPIC8gRGlyZWN0b3IiLCJDbG9ubWVsIENvbW11bml0eSBBcnRzIiwiUTEiLCJIaWdoIiwiSGlnaCIsIlByb2plY3QgYWxpZ25zIHdpdGggbWlzc2lvbjsgYm9hcmQgbm90IGVtYmFycmFzc2VkOyBzdGFmZiBub3QgYnVybmVkIG91dCIsIldlZWtseSIsIjEtdG8tMSBtZWV0aW5nIiwiQ0VPIGRlcGFydHVyZSB3b3VsZCBzdGFsbCBwcm9qZWN0IiwiRXRoaWNhbDogbWlzc2lvbiBhbGlnbm1lbnQgY2hlY2siCiJQcm9qZWN0IFNwb25zb3IgKEJvYXJkKSIsIkJvYXJkIG9mIERpcmVjdG9ycyIsIlExIiwiSGlnaCIsIkhpZ2giLCJHb3Zlcm5hbmNlIHJpc2sgbWFuYWdlZDsgZmluYW5jZXMgY29udHJvbGxlZDsgbm8gcmVwdXRhdGlvbmFsIGRhbWFnZSIsIk1vbnRobHkiLCJCb2FyZCByZXBvcnQiLCJCb2FyZCBsb3NpbmcgY29uZmlkZW5jZSA9IHByb2plY3Qgc3RvcHBlZCIsIkdvdmVybmFuY2U6IFByaW5jaXBsZSA0IGFuZCA1IgoiUVVBRFJBTlQgMiDigJQgS0VFUCBTQVRJU0ZJRUQiLCwsLCwsLCwsIiIKIkxFTyBQcm9ncmFtbWUgT2ZmaWNlciIsIkxvY2FsIEVudGVycHJpc2UgT2ZmaWNlIiwiUTIiLCJIaWdoIiwiTG93IiwiR3JhbnQgY29uZGl0aW9ucyBtZXQ7IG5vIG5lZ2F0aXZlIHB1YmxpY2l0eSBmb3IgTEVPIiwiUXVhcnRlcmx5IiwiQnJpZWYgdXBkYXRlIGVtYWlsIiwiTm9uY29tcGxpYW5jZSA9IGxvc3Mgb2YgZnV0dXJlIGZ1bmRpbmciLCJFdGhpY2FsOiB0cmFuc3BhcmVuY3kgb24gY2hhbGxlbmdlcyIKIkRvbmVnYWwgQ291bnR5IENvdW5jaWwgQXJ0cyBPZmZpY2VyIiwiTG9jYWwgQXV0aG9yaXR5IiwiUTIiLCJIaWdoIiwiTG93IiwiUHJvamVjdCBjb250cmlidXRlcyB0byBjb3VudHkgYXJ0cyBzdHJhdGVneTsgbm8gY29tbXVuaXR5IGNvbnRyb3ZlcnN5IiwiUXVhcnRlcmx5IiwiMS1wYWdlIHN1bW1hcnkiLCJOb2lzZSBjb21wbGFpbnRzIG9yIGNvbW11bml0eSBjb25mbGljdCIsIlN1c3RhaW5hYmxlOiBsZWdhY3kgYWZ0ZXIgcHJvamVjdCBlbmRzIgoiSFNFIENvbW11bml0eSBIZWFsdGggVGVhbSIsIkhlYWx0aCBTZXJ2aWNlIEV4ZWN1dGl2ZSIsIlEyIiwiTWVkaXVtIiwiTG93IiwiTm8gc2FmZWd1YXJkaW5nIGlzc3VlczsgcHJvamVjdCBzZXJ2ZXMgdnVsbmVyYWJsZSBwZW9wbGUgYXBwcm9wcmlhdGVseSIsIkJpLWFubnVhbGx5IiwiRW1haWwgd2l0aCBzdW1tYXJ5IiwiU2FmZWd1YXJkaW5nIGluY2lkZW50IHdpdGhvdXQgbm90aWZpY2F0aW9uIiwiRXRoaWNhbDogc2FmZWd1YXJkaW5nIHByb3RvY29scyIKIlFVQURSQU5UIDMg4oCUIEtFRVAgSU5GT1JNRUQiLCwsLCwsLCwsIiIKIlByb2dyYW1tZSBQYXJ0aWNpcGFudHMgKDQwKSIsIkNvbW11bml0eSBtZW1iZXJzIiwiUTMiLCJMb3ciLCJIaWdoIiwiQ2xlYXIgY29tbXVuaWNhdGlvbjsgdGhlaXIgaW5wdXQgaXMgdmFsdWVkOyBzZXNzaW9ucyBhcmUgdXNlZnVsIiwiV2Vla2x5IiwiSW4tcGVyc29uIGF0IHNlc3Npb25zIiwiRHJvcG91dCBpZiB0aGV5IGZlZWwgdW5oZWFyZCIsIkNvbGxhYm9yYXRpdmU6IGNvLWRlc2lnbiBwcmluY2lwbGUiCiJWb2x1bnRlZXIgRmFjaWxpdGF0b3JzICg0KSIsIkNvbW11bml0eSB2b2x1bnRlZXJzIiwiUTMiLCJMb3ciLCJIaWdoIiwiUmVjb2duaXRpb247IG1lYW5pbmdmdWwgd29yazsgbm90IGV4cGxvaXRlZDsgc2tpbGxzIGRldmVsb3BtZW50IiwiV2Vla2x5IiwiQnJpZWZpbmcgKyBXaGF0c0FwcCBncm91cCIsIlZvbHVudGVlciBidXJub3V0ID0gZGVsaXZlcnkgZmFpbHVyZSIsIkhlcnpiZXJnOiBtb3RpdmF0b3JzIG5vdCBqdXN0IGh5Z2llbmUiCiJMb2NhbCBHUCBTdXJnZXJpZXMgKDMpIiwiUmVmZXJyYWwgcGFydG5lcnMiLCJRMyIsIkxvdyIsIkhpZ2giLCJSZWZlcnJhbHMgaGFuZGxlZCBwcm9mZXNzaW9uYWxseTsgcGFydGljaXBhbnRzIHJlcG9ydCBiZW5lZml0IiwiTW9udGhseSIsIkVtYWlsIHVwZGF0ZSIsIldpdGhkcmF3YWwgb2YgcmVmZXJyYWxzIGlmIHBvb3IgZXhwZXJpZW5jZSIsIlJlc3VsdHM6IHBhcnRpY2lwYW50IHdlbGxiZWluZyBldmlkZW5jZSIKIkNvbW11bml0eSBNZWRpYSAoRG9uZWdhbCBEYWlseSkiLCJMb2NhbCBwcmVzcyIsIlEzIiwiTG93IiwiTWVkaXVtIiwiUG9zaXRpdmUgc3RvcmllczsgYWNjZXNzIHdoZW4gcmVxdWVzdGVkOyBubyBzdXJwcmlzZXMiLCJBcyBuZWVkZWQiLCJQcmVzcyByZWxlYXNlIGZvciBtaWxlc3RvbmVzIiwiTmVnYXRpdmUgY292ZXJhZ2Ugb2YgYW55IGluY2lkZW50IiwiRXRoaWNhbDogcHJvYWN0aXZlIG5vdCByZWFjdGl2ZSBjb21tcyIKIlFVQURSQU5UIDQg4oCUIE1PTklUT1IiLCwsLCwsLCwsIiIKIkxvY2FsIENvdW5jaWxsb3IiLCJEb25lZ2FsIENvdW50eSBDb3VuY2lsIiwiUTQiLCJMb3ciLCJMb3ciLCJObyBjb25zdGl0dWVudCBjb21wbGFpbnRzIGFib3V0IG5vaXNlIG9yIGFjY2VzcyIsIkFubnVhbGx5IG9yIGFzIG5lZWRlZCIsIkxldHRlciBhdCBwcm9qZWN0IGxhdW5jaCIsIkNhbiBiZWNvbWUgSGlnaCBQb3dlciBpZiBjb250cm92ZXJzeSIsIk1vbml0b3I6IHdhdGNoIGZvciBwb3NpdGlvbiBzaGlmdCIKIk5hdGlvbmFsIENoYXJpdGllcyBSZWd1bGF0b3IiLCJDaGFyaXRpZXMgUmVndWxhdG9yIElyZWxhbmQiLCJRNCIsIkhpZ2giLCJMb3ciLCJBbm51YWwgcmVwb3J0aW5nIHN1Ym1pdHRlZDsgZ292ZXJuYW5jZSBjb2RlIGNvbXBsaWFuY2UiLCJBbm51YWxseSIsIkFubnVhbCByZXBvcnQgZmlsaW5nIiwiQ29tcGxpYW5jZSByZXZpZXcgdHJpZ2dlcmVkIGJ5IGNvbXBsYWludCIsIkdvdmVybmFuY2U6IGRvY3VtZW50YXRpb24gZXNzZW50aWFsIgoiIgoiRUNDU1IgUkVNSU5ERVIiCiJFdGhpY2FsIiwiQXJlIHlvdSBiZWluZyBob25lc3Qgd2l0aCBhbGwgc3Rha2Vob2xkZXJzIOKAlCBlc3BlY2lhbGx5IGFib3V0IHByb2JsZW1zPyIKIkNvbGxhYm9yYXRpdmUiLCJBcmUgYmVuZWZpY2lhcmllcyAoUTMpIGdlbnVpbmVseSBzaGFwaW5nIHRoZSBwcm9qZWN0IOKAlCBub3QganVzdCBpbmZvcm1lZCBhZnRlciBkZWNpc2lvbnM/IgoiQ3JlYXRpbmciLCJBcmUgc3Rha2Vob2xkZXIgcmVsYXRpb25zaGlwcyBjcmVhdGluZyBuZXcgdmFsdWUgZm9yIHRoZSBjb21tdW5pdHk/IgoiU3VzdGFpbmFibGUiLCJEbyBhbnkgc3Rha2Vob2xkZXJzIGhhdmUgYSByb2xlIGluIHN1c3RhaW5pbmcgdGhlIHByb2plY3Qgd2hlbiBmdW5kaW5nIGVuZHM/IgoiUmVzdWx0cyIsIkNhbiBzdGFrZWhvbGRlcnMgc2VlIGNsZWFyIGV2aWRlbmNlIHRoYXQgdGhlIHByb2plY3QgaXMgd29ya2luZz8iCiIiCiJHZW5lcmF0ZWQgYnkgR2V0IEl0IERvbmUg4oCUIEVDQ1NSIFBNIEd1aWRlIGZvciBJcmlzaCBPcmdhbmlzYXRpb25zIHwgZGVla3NoYTE5OTZybHAuZ2l0aHViLmlvL3BtLWd1aWRlIgo=" download="Stakeholder_Map_Freeman.csv" class="btn-pa" style="display:inline-flex;align-items:center;gap:6px;margin-top:1rem;font-size:13px;padding:10px 20px;text-decoration:none">⬇ Download CSV (Excel/Sheets)</a>
             </div>
 
             <!-- Impact Tracker -->
@@ -4847,8 +4804,11 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
               <span class="rc-icon">🌱</span>
               <span class="rc-tag" style="background:rgba(16,185,129,.08);color:hsl(160 84% 39%)">Sustainable — Results</span>
               <div class="rc-title">Impact Tracker</div>
-              <p class="rc-text">Measures what actually changed — not just what you did. Distinguishes activities, outputs, outcomes, and impact. Required by Pobal, Community Foundation Ireland, and Rethink Ireland.</p>
-              <button onclick="(function(){var c=decodeURIComponent('IMPACT%20TRACKER%0A%0AProject%3A%20%5BProject%20Name%5D%20%7C%20Period%3A%20%0A%0ALEVEL%201%3A%20ACTIVITIES%20(what%20we%20did)%0A-%20%5BActivity%201%5D%0A-%20%5BActivity%202%5D%0A%0ALEVEL%202%3A%20OUTPUTS%20(what%20we%20produced)%0A-Number%20of%20participants%3A%20%0A-Number%20of%20sessions%3A%20%0A-Materials%20produced%3A%20%0A%0ALEVEL%203%3A%20OUTCOMES%20(what%20changed)%0AIndicator%20%7C%20Baseline%20%7C%20Target%20%7C%20Actual%20%7C%20Method%0A%5BIndicator%201%5D%20%7C%20%7C%20%7C%20%7C%20Survey%0A%5BIndicator%202%5D%20%7C%20%7C%20%7C%20%7C%20Interview%0A%0ALEVEL%204%3A%20IMPACT%20(lasting%20difference)%0A%5BDescribe%20the%20lasting%20change%20in%20people%27s%20lives%20or%20community%5D%0A%0ASDG%20ALIGNMENT%0ASDG%203%20(Health)%3A%20%0ASDG%2010%20(Inequality)%3A%20%0ASDG%2011%20(Communities)%3A');var b=new Blob([c],{type:'text/plain'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='Impact_Tracker_Template.txt';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(a.href);})()" class="btn-pa" style="display:inline-block;margin-top:1rem;font-size:13px;padding:10px 20px;cursor:pointer;border:none">Download template ↓</button>
+              <p class="rc-text">Measures what actually changed — not just what you did. Distinguishes activities, outputs, outcomes, and impact. SDG-aligned. Format accepted by Pobal, Community Foundation Ireland, and Rethink Ireland.</p>
+              <div style="margin-top:1rem;padding:.875rem;background:#f0fdf8;border-radius:10px;font-family:var(--mono);font-size:10px;color:hsl(160 84% 28%);line-height:1.7">
+                <strong>Includes:</strong> 4-level impact hierarchy · 5 outcome indicators · SDG alignment section · Learning & improvement · Pre-filled community example
+              </div>
+              <a href="data:text/csv;base64,IkdFVCBJVCBET05FIOKAlCBJTVBBQ1QgVFJBQ0tFUiIsIkVDQ1NSIEZyYW1ld29yayDigJQgSG91Z2h0b24gKDIwMjMpIgoiUHJlLWZpbGxlZCBleGFtcGxlOiBDb21tdW5pdHkgRGlnaXRhbCBMaXRlcmFjeSBQcm9ncmFtbWUg4oCUIFBvYmFsIC8gUmV0aGluayBJcmVsYW5kIEZvcm1hdCIKIiIKIklNUEFDVCBISUVSQVJDSFkiCiJMZXZlbCIsIkRlZmluaXRpb24iLCJFeGFtcGxlICh0aGlzIHByb2plY3QpIiwiQ29tbW9uIE1pc3Rha2UiCiJBY3Rpdml0aWVzIiwiV2hhdCB0aGUgcHJvamVjdCBESUQiLCJEZWxpdmVyZWQgMTIgd2Vla2x5IDItaG91ciBkaWdpdGFsIGxpdGVyYWN5IHNlc3Npb25zIiwiUmVwb3J0aW5nIGFjdGl2aXRpZXMgYXMgb3V0Y29tZXMiCiJPdXRwdXRzIiwiV2hhdCB0aGUgcHJvamVjdCBQUk9EVUNFRCAobnVtYmVycykiLCI0MCBwYXJ0aWNpcGFudHM7IDk2IHNlc3Npb25zOyA0IHZvbHVudGVlciBmYWNpbGl0YXRvcnMgdHJhaW5lZCIsIkNvbmZ1c2luZyBvdXRwdXQgdm9sdW1lIHdpdGggbWVhbmluZ2Z1bCBjaGFuZ2UiCiJPdXRjb21lcyIsIldoYXQgQ0hBTkdFRCBmb3IgcGVvcGxlIChzaG9ydC9tZWRpdW0gdGVybSkiLCJQYXJ0aWNpcGFudHMgY2FuIGluZGVwZW5kZW50bHkgdXNlIHZpZGVvIGNhbGxpbmcgYW5kIG9ubGluZSBHUCBhcHBvaW50bWVudHMiLCJDbGFpbWluZyBvdXRjb21lcyB3aXRob3V0IGV2aWRlbmNlIgoiSW1wYWN0IiwiVGhlIExBU1RJTkcgZGlmZmVyZW5jZSAobG9uZy10ZXJtKSIsIlJlZHVjZWQgaXNvbGF0aW9uOyBzdXN0YWluZWQgZGlnaXRhbCBpbmRlcGVuZGVuY2UgMTIgbW9udGhzIHBvc3QtcHJvZ3JhbW1lIiwiT3ZlcmNsYWltaW5nIGltcGFjdCB3aXRob3V0IGxvbmctdGVybSBmb2xsb3ctdXAiCiIiCiJTRUNUSU9OIDE6IFBST0pFQ1QgT1ZFUlZJRVciCiJQcm9qZWN0IE5hbWUiLCJbWW91ciBQcm9qZWN0IE5hbWVdIgoiT3JnYW5pc2F0aW9uIiwiW1lvdXIgT3JnYW5pc2F0aW9uXSIKIkZ1bmRlciIsIltGdW5kZXIgTmFtZV0iCiJSZXBvcnRpbmcgUGVyaW9kIiwiW1N0YXJ0IERhdGVdIHRvIFtFbmQgRGF0ZV0iCiJQcmVwYXJlZCBCeSIsIltOYW1lIGFuZCBSb2xlXSIKIkRhdGUgb2YgUmVwb3J0IiwiW0RhdGVdIgoiIgoiU0VDVElPTiAyOiBBQ1RJVklUSUVTIChXaGF0IHdlIGRpZCkiCiJBY3Rpdml0eSIsIkRlc2NyaXB0aW9uIiwiRGF0ZXMiLCJMZWFkIFBlcnNvbiIsIkNvbXBsZXRlZD8gKFkvTikiCiJEaWdpdGFsIGxpdGVyYWN5IHNlc3Npb25zIiwiMTIgd2Vla2x5IDItaG91ciBncm91cCBzZXNzaW9ucyBhdCBjb21tdW5pdHkgY2VudHJlIiwiU2Vw4oCTRGVjIDIwMjUiLCJQcm9ncmFtbWUgQ29vcmRpbmF0b3IiLCJZIgoiT25lLXRvLW9uZSBzdXBwb3J0IiwiRHJvcC1pbiBzdXBwb3J0IHNlc3Npb25zIGZvciBwYXJ0aWNpcGFudHMgbmVlZGluZyBleHRyYSBoZWxwIiwiT2N04oCTRGVjIDIwMjUiLCJWb2x1bnRlZXIgRmFjaWxpdGF0b3JzIiwiWSIKIlZvbHVudGVlciBmYWNpbGl0YXRvciB0cmFpbmluZyIsIjItZGF5IHRyYWluaW5nIGZvciA0IGNvbW11bml0eSB2b2x1bnRlZXJzIiwiQXVnIDIwMjUiLCJFeHRlcm5hbCBUcmFpbmVyIiwiWSIKIkNvbW11bml0eSBvdXRyZWFjaCIsIlByb21vdGVkIHByb2dyYW1tZSB2aWEgR1Agc3VyZ2VyaWVzLCBsaWJyYXJ5LCBsb2NhbCByYWRpbyIsIkp1bOKAk0F1ZyAyMDI1IiwiQ29vcmRpbmF0b3IiLCJZIgoiW0FkZCB5b3VyIGFjdGl2aXR5XSIsIiIsIiIsIiIsIiIKIiIKIlNFQ1RJT04gMzogT1VUUFVUUyAoV2hhdCB3ZSBwcm9kdWNlZCDigJQgbnVtYmVycykiCiJPdXRwdXQgSW5kaWNhdG9yIiwiVGFyZ2V0IiwiQWN0dWFsIiwiVmFyaWFuY2UiLCJOb3RlcyIKIk51bWJlciBvZiBwYXJ0aWNpcGFudHMgZW5yb2xsZWQiLCI0MCIsIjM4IiwiLTIiLCIyIHdpdGhkcmV3IGR1ZSB0byBoZWFsdGgg4oCUIHJlcGxhY2VkIGJ5IHdhaXRsaXN0IgoiTnVtYmVyIG9mIHNlc3Npb25zIGRlbGl2ZXJlZCIsIjEyIiwiMTIiLCIwIiwiQWxsIHNlc3Npb25zIGNvbXBsZXRlZCBhcyBwbGFubmVkIgoiTnVtYmVyIG9mIHZvbHVudGVlciBmYWNpbGl0YXRvcnMgdHJhaW5lZCIsIjQiLCI0IiwiMCIsIkFsbCBjZXJ0aWZpZWQgYnkgZW5kIG9mIEF1Z3VzdCIKIk51bWJlciBvZiBwYXJ0bmVyIG9yZ2FuaXNhdGlvbnMgZW5nYWdlZCIsIjMiLCI0IiwiKzEiLCJMb2NhbCBwaGFybWFjeSBqb2luZWQgYXMgcmVmZXJyYWwgcGFydG5lciIKIltBZGQgeW91ciBvdXRwdXRdIiwiIiwiIiwiIiwiIgoiIgoiU0VDVElPTiA0OiBPVVRDT01FUyAoV2hhdCBjaGFuZ2VkIGZvciBwZW9wbGUpIgoiT3V0Y29tZSBJbmRpY2F0b3IiLCJCYXNlbGluZSAoYmVmb3JlKSIsIlRhcmdldCIsIkFjdHVhbCAoYWZ0ZXIpIiwiRXZpZGVuY2UgTWV0aG9kIiwiU291cmNlIgoiUGFydGljaXBhbnQgZGlnaXRhbCBjb25maWRlbmNlIHNjb3JlICgxLTEwKSIsIjMuMiBhdmVyYWdlIiwiNS4wIGF2ZXJhZ2UiLCI2LjEgYXZlcmFnZSIsIlByZS9wb3N0IHN1cnZleSAoMzggcmVzcG9uc2VzKSIsIlBhcnRpY2lwYW50IHN1cnZleSIKIkFiaWxpdHkgdG8gbWFrZSB2aWRlbyBjYWxscyBpbmRlcGVuZGVudGx5IiwiOCUgY291bGQiLCI3NSUgY2FuIiwiODElIGNhbiIsIlByYWN0aWNhbCBhc3Nlc3NtZW50IGluIGZpbmFsIHNlc3Npb24iLCJGYWNpbGl0YXRvciBvYnNlcnZhdGlvbiIKIlVzZSBvZiBvbmxpbmUgSFNFL0dQIGFwcG9pbnRtZW50IHNlcnZpY2VzIiwiMTIlIHVzZWQiLCI2MCUgdXNlIiwiNTglIHVzZSIsIjMtbW9udGggZm9sbG93LXVwIHN1cnZleSIsIlBob25lIHN1cnZleSIKIkZlZWxpbmcgbGVzcyBzb2NpYWxseSBpc29sYXRlZCAoc2VsZi1yZXBvcnRlZCkiLCI2NyUgcmVwb3J0ZWQgaXNvbGF0aW9uIiwiNDAlIHJlcG9ydCBpc29sYXRpb24iLCI0NCUgcmVwb3J0IGlzb2xhdGlvbiIsIlByZS9wb3N0IHdlbGxiZWluZyBxdWVzdGlvbm5haXJlIiwiQW5vbnltb3VzIHN1cnZleSIKIkZhY2lsaXRhdG9ycyBjb25maWRlbnQgdG8gcnVuIGZ1dHVyZSBzZXNzaW9ucyBpbmRlcGVuZGVudGx5IiwiMCBvZiA0IiwiNCBvZiA0IiwiNCBvZiA0IiwiRmFjaWxpdGF0b3Igc2VsZi1hc3Nlc3NtZW50IiwiQ29vcmRpbmF0b3IgcmVwb3J0IgoiW0FkZCB5b3VyIG91dGNvbWUgaW5kaWNhdG9yXSIsIiIsIiIsIiIsIiIsIiIKIiIKIlNFQ1RJT04gNTogSU1QQUNUIChMYXN0aW5nIGRpZmZlcmVuY2UpIgoiSW1wYWN0IEFyZWEiLCJFdmlkZW5jZSBBdmFpbGFibGUiLCJTb3VyY2UiLCJUaW1lIEZyYW1lIgoiU3VzdGFpbmVkIGRpZ2l0YWwgaW5kZXBlbmRlbmNlIiwiMTItbW9udGggZm9sbG93LXVwIHN1cnZleSBwbGFubmVkIGZvciBTZXB0ZW1iZXIgMjAyNiIsIlByb2dyYW1tZSBjb29yZGluYXRvciIsIjEyIG1vbnRocyBwb3N0IgoiUmVkdWNlZCBkZW1hbmQgb24gY2FyZXIgc2VydmljZXMiLCJRdWFsaXRhdGl2ZSBpbnRlcnZpZXdzIHdpdGggNiBwYXJ0aWNpcGFudCBjYXJlcnMiLCJDb29yZGluYXRvciIsIjYgbW9udGhzIHBvc3QiCiJWb2x1bnRlZXIgZmFjaWxpdGF0b3JzIG5vdyBsZWFkaW5nIHNlc3Npb25zIGluZGVwZW5kZW50bHkiLCJPbmdvaW5nIGF0IGNvbW11bml0eSBjZW50cmUg4oCUIG5vIGV4dGVybmFsIHN1cHBvcnQgbmVlZGVkIiwiQ29tbXVuaXR5IENlbnRyZSBNYW5hZ2VyIiwiT25nb2luZyIKIltBZGQgeW91ciBpbXBhY3Qgc3RhdGVtZW50XSIsIiIsIiIsIiIKIiIKIlNFQ1RJT04gNjogU0RHIEFMSUdOTUVOVCAoUmVxdWlyZWQgYnkgUG9iYWwgLyBSZXRoaW5rIElyZWxhbmQgLyBDb21tdW5pdHkgRm91bmRhdGlvbikiCiJTREciLCJSZWxldmFuY2UgdG8gVGhpcyBQcm9qZWN0IiwiRXZpZGVuY2UiCiJTREcgMyDigJQgR29vZCBIZWFsdGggYW5kIFdlbGxiZWluZyIsIlByb2dyYW1tZSByZWR1Y2VkIGlzb2xhdGlvbjsgaW1wcm92ZWQgYWNjZXNzIHRvIGhlYWx0aCBzZXJ2aWNlcyBvbmxpbmUiLCJPdXRjb21lIHN1cnZleSBkYXRhIgoiU0RHIDgg4oCUIERlY2VudCBXb3JrIiwiNCB2b2x1bnRlZXJzIGdhaW5lZCBjZXJ0aWZpZWQgZGlnaXRhbCBmYWNpbGl0YXRpb24gc2tpbGxzIOKAlCBlbXBsb3ltZW50LXJlbGV2YW50IiwiVm9sdW50ZWVyIGFzc2Vzc21lbnQiCiJTREcgMTAg4oCUIFJlZHVjZWQgSW5lcXVhbGl0aWVzIiwiVGFyZ2V0ZWQgb2xkZXIgYWR1bHRzIGV4Y2x1ZGVkIGZyb20gZGlnaXRhbCBlY29ub215IiwiUGFydGljaXBhbnQgZGVtb2dyYXBoaWNzIgoiU0RHIDExIOKAlCBTdXN0YWluYWJsZSBDb21tdW5pdGllcyIsIkNvbW11bml0eS1sZWQgcHJvZ3JhbW1lIHdpdGggdHJhaW5lZCBsb2NhbCBmYWNpbGl0YXRvcnMgZm9yIG9uZ29pbmcgZGVsaXZlcnkiLCJTdXN0YWluYWJpbGl0eSBwbGFuIgoiU0RHIDE2IOKAlCBTdHJvbmcgSW5zdGl0dXRpb25zIiwiRGVsaXZlcmVkIHVuZGVyIFBvYmFsIFNJQ0FQIGdvdmVybmFuY2UgZnJhbWV3b3JrOyBmdWxsIGNvbXBsaWFuY2UiLCJHb3Zlcm5hbmNlIGRvY3VtZW50YXRpb24iCiIiCiJTRUNUSU9OIDc6IExFQVJOSU5HIEFORCBJTVBST1ZFTUVOVCIKIldoYXQgd29ya2VkIHdlbGwiLCJXaGF0IHdlIHdvdWxkIGRvIGRpZmZlcmVudGx5IiwiQWN0aW9uIGZvciBuZXh0IHBoYXNlIgoiUGFydG5lcnNoaXAgd2l0aCBHUCBzdXJnZXJpZXMg4oCUIHN0cm9uZyByZWZlcnJhbCBwaXBlbGluZSIsIlN0YXJ0IHZvbHVudGVlciB0cmFpbmluZyA2IHdlZWtzIGVhcmxpZXIgbm90IDQiLCJCdWlsZCBpbiA2LXdlZWsgdHJhaW5pbmcgd2luZG93IGluIFllYXIgMiBwbGFuIgoiRHJvcC1pbiBzZXNzaW9ucyByZWR1Y2VkIGRyb3BvdXQgcmF0ZSIsIlByb3ZpZGUgdGFibGV0cyBmb3IgcGFydGljaXBhbnRzIHRvIGJvcnJvdyBiZXR3ZWVuIHNlc3Npb25zIiwiQXBwbHkgZm9yIGVxdWlwbWVudCBmdW5kaW5nIHRocm91Z2ggTEVBREVSIgoiQ2VsZWJyYXRpb24gZXZlbnQgYXQgZW5kIGJ1aWx0IGNvbW11bml0eSIsIkNvbGxlY3QgcXVhbGl0YXRpdmUgc3RvcmllcyBlYXJsaWVyIGluIHByb2dyYW1tZSIsIkFzc2lnbiBzdG9yeXRlbGxpbmcgcm9sZSB0byBjb29yZGluYXRvciBmcm9tIFdlZWsgNCIKIiIKIkdlbmVyYXRlZCBieSBHZXQgSXQgRG9uZSDigJQgRUNDU1IgUE0gR3VpZGUgZm9yIElyaXNoIE9yZ2FuaXNhdGlvbnMgfCBkZWVrc2hhMTk5NnJscC5naXRodWIuaW8vcG0tZ3VpZGUiCg==" download="Impact_Tracker_Template.csv" class="btn-pa" style="display:inline-flex;align-items:center;gap:6px;margin-top:1rem;font-size:13px;padding:10px 20px;text-decoration:none">⬇ Download CSV (Excel/Sheets)</a>
             </div>
 
           </div>
@@ -4872,15 +4832,29 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           </div>
         </div>
       </div>
-      <footer>
+            <footer>
         <div class="footer-inner">
           <div>
             <div class="footer-brand">Get It Done</div>
-            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework — Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
-            <div class="footer-copy">© 2025 · Deeksha · UCD MSc Project Management</div>
+            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
           </div>
           <div class="footer-nav">
-            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a><a href="javascript:void(0)" onclick="showPage('planning')">Planning</a><a href="javascript:void(0)" onclick="showPage('risk')">Risk</a><a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a><a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a><a href="javascript:void(0)" onclick="showPage('about')">About</a>
+            <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
+            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
+            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
+            <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
           </div>
         </div>
       </footer>
@@ -5011,19 +4985,29 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           </div>
         </div>
       </section>
-      <footer>
+            <footer>
         <div class="footer-inner">
           <div>
             <div class="footer-brand">Get It Done</div>
-            <p class="footer-sub">UCD MSc Project Management · ECCSR framework — Houghton (2023)</p>
-            <div class="footer-copy">© 2025 · Deeksha · UCD MSc Project Management</div>
+            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
           </div>
           <div class="footer-nav">
             <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
-            <a href="javascript:void(0)" onclick="showPage('ai')">AI</a>
-            <a href="javascript:void(0)" onclick="showPage('tools')">Templates</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
+            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
+            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
             <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
-            <a href="javascript:void(0)" onclick="showPage('about')">About</a>
           </div>
         </div>
       </footer>
@@ -5068,24 +5052,39 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
             <div class="pullout-source">Trevino, L. and Nelson, K. (2021). Managing Business Ethics. 8th ed. Wiley.</div>
           </div>
 
-          <div class="highlight-band reveal">
-            <div class="hb-label">The ECCSR Ethical Test</div>
-            <div class="hb-text">When facing a difficult decision, ask: what would I do if everyone could see exactly what I am doing and why? If the answer changes your behaviour, that gap is where the ethical work needs to happen.</div>
-          </div>
+      <div class="content-section reveal" style="background:linear-gradient(160deg,#f8faff,#f3f0ff)">
+        <div class="cs-inner" style="max-width:960px">
+          <div class="planning-cards-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:stretch">
 
-          <div class="irish-box reveal">
-            <div class="irish-box-label">Irish Example — Kerry Digital Agency</div>
-            <p>A Kerry digital agency building a community health app used ChatGPT with sample patient scenarios shared informally by the charity — without a data processing agreement. No deliberate wrongdoing. A person responding to deadline pressure in a system that made the shortcut feel acceptable. This is exactly what Trevino and Nelson describe.</p>
-          </div>
+            <div style="background:#fff;border:1.5px solid #e5e7eb;border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.05)">
+              <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,hsl(244 76% 59%),hsl(263 70% 55%))"></div>
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.25rem">
+                <span style="font-size:1.5rem">🇮🇪</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:hsl(244 76% 59%)">Irish Example</span>
+              </div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.1rem;font-weight:700;color:#0f0e17;margin-bottom:.875rem;line-height:1.3">Kerry Digital Agency — GDPR Breach</div>
+              <p style="font-size:13.5px;color:#374151;line-height:1.8;margin:0">A Kerry digital agency building a community health app used ChatGPT with sample patient scenarios shared informally by the charity — without a data processing agreement. No deliberate wrongdoing. A person responding to deadline pressure in a system that made the shortcut feel acceptable. This is exactly what Trevino and Nelson describe: not a villain, but a person in a system that normalised the compromise.</p>
+              <div style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid #f3f4f6">
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#9ca3af;letter-spacing:.06em">Data Protection Commission Ireland (2023). Guidance on AI and Data Protection.</span>
+              </div>
+            </div>
 
-          <div class="mini-stats reveal">
-            <div class="ms-item" style="--ms-bg1:hsl(0 72% 97%);--ms-bg2:hsl(0 72% 94%);--ms-border:rgba(239,68,68,.12);--ms-color:hsl(0 72% 51%)">
-              <div class="ms-n">4%</div><div class="ms-l">Max GDPR fine — percentage of global annual turnover (DPC Ireland)</div>
+            <div style="background:linear-gradient(135deg,hsl(330 81% 52%),hsl(263 70% 45%));border-radius:16px;padding:2rem;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(79,70,229,.2)">
+              <div style="position:absolute;top:-40px;right:-40px;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.06)"></div>
+              <div style="position:absolute;bottom:-30px;left:-20px;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,.04)"></div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:1rem">The ECCSR Ethical Test</div>
+              <div style="font-family:'Fraunces',Georgia,serif;font-size:1.2rem;font-weight:700;color:#fff;line-height:1.25;margin-bottom:1.25rem"><em style="font-style:italic;font-weight:300">What would you do if everyone could see exactly what you are doing and why?</em></div>
+              <p style="font-size:13.5px;color:rgba(255,255,255,.85);line-height:1.8;margin:0 0 1.25rem">When facing a difficult decision, ask: what would I do if everyone could see exactly what I am doing and why? If the answer changes your behaviour, that gap is where the ethical work needs to happen. ECCSR requires that ethics is the lens, not the last check.</p>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:rgba(255,255,255,.4);letter-spacing:.06em">Trevino, L. and Nelson, K. (2021). Managing Business Ethics. 8th ed. Wiley.</div>
             </div>
-            <div class="ms-item" style="--ms-bg1:hsl(330 81% 97%);--ms-bg2:hsl(330 81% 94%);--ms-border:rgba(236,72,153,.12);--ms-color:hsl(330 81% 60%)">
-              <div class="ms-n">4</div><div class="ms-l">APM ethical principles: Integrity, Respect, Accountability, Competence</div>
-            </div>
+
           </div>
+          <div class="mini-stats reveal" style="margin-top:1.5rem">
+            <div class="ms-item" style="--ms-bg1:hsl(0 72% 97%);--ms-bg2:hsl(0 72% 94%);--ms-border:rgba(239,68,68,.12);--ms-color:hsl(0 72% 51%)"><div class="ms-n">4%</div><div class="ms-l">Max GDPR fine — percentage of global annual turnover (DPC Ireland)</div></div>
+            <div class="ms-item" style="--ms-bg1:hsl(330 81% 97%);--ms-bg2:hsl(330 81% 94%);--ms-border:rgba(236,72,153,.12);--ms-color:hsl(330 81% 60%)"><div class="ms-n">4</div><div class="ms-l">APM ethical principles: Integrity, Respect, Accountability, Competence</div></div>
+          </div>
+        </div>
+      </div>
 
           <div class="lb reveal">
             <div class="lb-l">ECCSR Lens — Ethics</div>
@@ -5099,19 +5098,29 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           </div>
         </div>
       </div>
-      <footer>
+            <footer>
         <div class="footer-inner">
           <div>
             <div class="footer-brand">Get It Done</div>
-            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework — Houghton (2023).</p>
-            <div class="footer-copy">© 2025 · Deeksha · UCD MSc Project Management</div>
+            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
           </div>
           <div class="footer-nav">
             <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
             <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
             <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
             <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
-            <a href="javascript:void(0)" onclick="showPage('about')">About</a>
           </div>
         </div>
       </footer>
@@ -5170,18 +5179,29 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
           </div>
         </div>
       </div>
-      <footer>
+            <footer>
         <div class="footer-inner">
           <div>
             <div class="footer-brand">Get It Done</div>
-            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework — Houghton (2023).</p>
-            <div class="footer-copy">© 2025 · Deeksha · UCD MSc Project Management</div>
+            <p class="footer-sub">A free PM guide for Irish small businesses and charities. ECCSR framework &mdash; Houghton (2023). UCD Michael Smurfit Graduate Business School.</p>
+            <div class="footer-copy">&copy; 2025 &middot; Deeksha &middot; UCD MSc Project Management</div>
           </div>
           <div class="footer-nav">
-            <a href="javascript:void(0)" onclick="showPage('home')">Home</a>
             <a href="javascript:void(0)" onclick="showPage('eccsr')">ECCSR</a>
-            <a href="javascript:void(0)" onclick="showPage('tools')">Templates</a>
-            <a href="javascript:void(0)" onclick="showPage('about')">About</a>
+            <a href="javascript:void(0)" onclick="showPage('strategy')">Strategy</a>
+            <a href="javascript:void(0)" onclick="showPage('planning')">Planning</a>
+            <a href="javascript:void(0)" onclick="showPage('risk')">Risk</a>
+            <a href="javascript:void(0)" onclick="showPage('teams')">Teams</a>
+            <a href="javascript:void(0)" onclick="showPage('leadership')">Leadership</a>
+            <a href="javascript:void(0)" onclick="showPage('stakeholders')">Stakeholders</a>
+            <a href="javascript:void(0)" onclick="showPage('ethics')">Ethics</a>
+            <a href="javascript:void(0)" onclick="showPage('sustainability')">Sustainability</a>
+            <a href="javascript:void(0)" onclick="showPage('governance')">Governance</a>
+            <a href="javascript:void(0)" onclick="showPage('methodologies')">Methods</a>
+            <a href="javascript:void(0)" onclick="showPage('ai')">AI in PM</a>
+            <a href="javascript:void(0)" onclick="showPage('implementation')">Implementation</a>
+            <a href="javascript:void(0)" onclick="showPage('decisions')">Decisions</a>
+            <a href="javascript:void(0)" onclick="showPage('quiz')">Quiz</a>
           </div>
         </div>
       </footer>
@@ -5212,7 +5232,7 @@ document.addEventListener('click', e => {
   const a = e.target.closest('a[href]');
   if(!a) return;
   const href = a.getAttribute('href');
-  if(!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto') || a.target === '_blank') return;
+  if(!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto') || href.startsWith('javascript') || href.startsWith('data:') || a.target === '_blank') return;
   e.preventDefault();
   document.body.classList.add('page-out');
   setTimeout(() => { window.location.href = href; }, 280);
@@ -5332,7 +5352,8 @@ document.addEventListener('click', function(e) {
 let currentPage = 'home';
 
 function showPage(id) {
-  if(id === currentPage) return;
+  // Allow re-visiting quiz page to reset it; block everything else if same page
+  if(id === currentPage && id !== 'quiz') return;
   const current = document.getElementById('page-' + currentPage);
   const next = document.getElementById('page-' + id);
   if(!next) return;
@@ -5447,7 +5468,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
   // Home reveal animations
   document.querySelectorAll('#page-home .reveal, #page-home .stagger').forEach(function(el) {
-});
+    revObs.observe(el);
+  });
+}); // end DOMContentLoaded
 
 // ═══ QUIZ ENGINE ═══
 const quizData = [
@@ -5531,24 +5554,20 @@ function nextQuestion(){
 
 function showScore(){
   document.getElementById('quizCard').style.display='none';
-  document.getElementById('quizScoreCard').className='quiz-score-card show';
-  document.getElementById('scoreNum').textContent=score;
-  document.getElementById('quizProgress').style.width='100%';
-  const pct=score/shuffled.length;
-  setTimeout(()=>{
-    const ring=document.getElementById('scoreRingFill');
-    ring.style.strokeDashoffset=326.7-(pct*326.7);
-    ring.style.stroke=pct>=0.8?'hsl(160 84% 39%)':pct>=0.5?'hsl(38 92% 50%)':'#ef4444';
-  },100);
-  const tiers=[
-    ["Keep exploring","Work through the guide sections one at a time, paying attention to the academic frameworks and their Irish context."],
-    ["Good foundation","You understand the core ideas well. Review the sections where you were unsure."],
-    ["Strong performance","You have a solid grasp across all 12 topics. Check the ECCSR lens boxes in each section."],
-    ["Excellent — A grade standard","You have demonstrated comprehensive knowledge across PM frameworks, Irish charity governance, and the ECCSR lens."]
+  var scoreCard = document.getElementById('quizScoreCard');
+  scoreCard.style.display='block';
+  var pct = score / shuffled.length;
+  var pctStr = Math.round(pct * 100) + '%';
+  document.getElementById('quizScoreNum').textContent = score + ' / ' + shuffled.length;
+  document.getElementById('quizScoreLabel').textContent = pctStr + ' correct';
+  var tiers=[
+    ["Keep exploring — work through the guide chapters and try again."],
+    ["Good foundation — you understand the core ideas. Review the sections where you were unsure."],
+    ["Strong performance — solid grasp across all topics. Check the ECCSR lens boxes in each section."],
+    ["Excellent — A grade standard. Comprehensive knowledge across PM frameworks, Irish charity governance, and ECCSR."]
   ];
-  const tier=score<=4?0:score<=6?1:score<=8?2:3;
-  document.getElementById('scoreTitle').textContent=tiers[tier][0];
-  document.getElementById('scoreSub').textContent=tiers[tier][1];
+  var tier = score <= 4 ? 0 : score <= 9 ? 1 : score <= 15 ? 2 : 3;
+  document.getElementById('quizScoreFeedback').textContent = tiers[tier][0];
 }
 
 function restartQuiz(){
@@ -5556,7 +5575,7 @@ function restartQuiz(){
   shuffled.sort(()=>Math.random()-0.5);
   document.getElementById('quiz-start-screen').style.display='none';
   document.getElementById('quizCard').style.display='block';
-  document.getElementById('quizScoreCard').className='quiz-score-card';
+  document.getElementById('quizScoreCard').style.display='none';
   renderQuestion();
 }
 
@@ -6119,7 +6138,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
-}, {threshold:0.07, rootMargin:'0px 0px -20px 0px'});
 
 function toggleEccsr(id) {
   var cards = document.querySelectorAll('.eccsr-step-card');
