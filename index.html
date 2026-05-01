@@ -56,7 +56,7 @@ body{animation:pageIn .5s cubic-bezier(.22,1,.36,1) both}
 #scroll-progress{position:fixed;top:0;left:0;height:3px;z-index:9999;width:0%;transition:width .1s linear;pointer-events:none}
 
 /* ═══ NAV ═══ */
-nav{position:fixed;top:0;left:0;right:0;z-index:500;height:64px;padding:0 2.5rem;display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,0);backdrop-filter:blur(0);transition:all .3s}
+nav{position:fixed;top:0;left:0;right:0;z-index:10000;height:64px;padding:0 2.5rem;display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,0);backdrop-filter:blur(0);transition:all .3s}
 nav.scrolled{background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);box-shadow:0 2px 20px rgba(0,0,0,0.06)}
 .nav-brand{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--text);text-decoration:none;margin-right:auto;letter-spacing:-0.02em}
 .nav-brand em{color:var(--indigo);font-style:italic}
@@ -224,7 +224,7 @@ body{overflow:hidden;height:100vh}
 .lb{background:rgba(79,70,229,.05);border-left:3px solid var(--pa,var(--indigo));border-radius:0 10px 10px 0;padding:1.5rem 2rem;margin:2rem 0}
 .lb-l{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--pa,var(--indigo));margin-bottom:8px}
 .lb p{color:var(--pa2,#3730a3);font-size:14px;margin:0;font-style:italic;line-height:1.85}
-.pnav{display:flex;justify-content:space-between;align-items:center;padding:2rem 0;border-top:1px solid var(--border);margin-top:2rem}
+.pnav{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 2.5rem;border-top:1px solid var(--border);margin-top:0;background:#fff}
 .pnl{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pa,var(--indigo));background:none;border:none;cursor:pointer;transition:gap .2s}
 .pnl:hover{gap:12px}
 .pnh{font-family:var(--mono);font-size:11px;color:var(--muted);background:none;border:none;cursor:pointer;letter-spacing:.06em}
@@ -1520,7 +1520,7 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
 <div id="scroll-progress" style="position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,hsl(244 76% 59%),hsl(263 70% 55%),hsl(330 81% 60%));z-index:9999;width:0%;transition:width .1s linear;pointer-events:none"></div>
 
 <!-- NAV -->
-<nav id="main-nav" style="position:fixed;top:0;left:0;right:0;z-index:500;height:64px;padding:0 2rem;display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,0);backdrop-filter:blur(0);transition:all .3s;border-bottom:1px solid transparent">
+<nav id="main-nav" style="position:fixed;top:0;left:0;right:0;z-index:10000;height:64px;padding:0 2rem;display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,0);backdrop-filter:blur(0);transition:all .3s;border-bottom:1px solid transparent">
   <a href="#" class="nav-brand" onclick="showPage('home');return false">Get It <em>Done</em></a>
 
   <!-- Desktop chapter links -->
@@ -2175,8 +2175,8 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
               <div style="font-family:var(--serif);font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:.75rem;line-height:1.3">Project Success Beyond Time and Budget</div>
               <p style="font-size:12.5px;color:rgba(255,255,255,.55);margin-bottom:1.25rem;line-height:1.7">What does it really mean for a project to succeed? A conversation that goes beyond the iron triangle.</p>
               <audio controls preload="none" style="width:100%;accent-color:hsl(263 70% 65%);border-radius:8px">
-                <source src="media/audio/Project_Success_Beyond_Time_and_Budget.m4a" type="audio/x-m4a">
-                <source src="media/audio/Project_Success_Beyond_Time_and_Budget.m4a" type="audio/mp4">
+                <source src="media/audio/Project_Success_Beyond_Time_and_Budget.mp3" type="audio/mpeg">
+                <source src="media/audio/Project_Success_Beyond_Time_and_Budget.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
               </audio>
             </div>
@@ -2186,8 +2186,8 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
               <div style="font-family:var(--serif);font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:.75rem;line-height:1.3">Redefining Success for Irish Charity Projects</div>
               <p style="font-size:12.5px;color:rgba(255,255,255,.55);margin-bottom:1.25rem;line-height:1.7">How Irish charities can define and measure project success on their own terms using the ECCSR lens.</p>
               <audio controls preload="none" style="width:100%;accent-color:hsl(263 70% 65%);border-radius:8px">
-                <source src="media/audio/Redefining_success_for_Irish_charity_projects.m4a" type="audio/x-m4a">
-                <source src="media/audio/Redefining_success_for_Irish_charity_projects.m4a" type="audio/mp4">
+                <source src="media/audio/Redefining_success_for_Irish_charity_projects.mp3" type="audio/mpeg">
+                <source src="media/audio/Redefining_success_for_Irish_charity_projects.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
               </audio>
             </div>
@@ -5368,8 +5368,8 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
               </div>
               <div class="pc-player">
                 <audio controls preload="none" style="width:100%;border-radius:12px">
-                  <source src="media/audio/Redefining_success_for_Irish_charity_projects.m4a" type="audio/x-m4a">
-                <source src="media/audio/Redefining_success_for_Irish_charity_projects.m4a" type="audio/mp4">
+                  <source src="media/audio/Redefining_success_for_Irish_charity_projects.mp3" type="audio/mpeg">
+                <source src="media/audio/Redefining_success_for_Irish_charity_projects.mp3" type="audio/mpeg">
                   Your browser does not support the audio element.
                 </audio>
               </div>
@@ -5395,8 +5395,8 @@ button:active{transform:scale(.97) !important;transition:transform .1s ease !imp
               </div>
               <div class="pc-player">
                 <audio controls preload="none" style="width:100%;border-radius:12px">
-                  <source src="media/audio/Project_Success_Beyond_Time_and_Budget.m4a" type="audio/x-m4a">
-                <source src="media/audio/Project_Success_Beyond_Time_and_Budget.m4a" type="audio/mp4">
+                  <source src="media/audio/Project_Success_Beyond_Time_and_Budget.mp3" type="audio/mpeg">
+                <source src="media/audio/Project_Success_Beyond_Time_and_Budget.mp3" type="audio/mpeg">
                   Your browser does not support the audio element.
                 </audio>
               </div>
