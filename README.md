@@ -1,4 +1,4 @@
-# Get It Done — Practical PM Guide for Irish Small Businesses & Charities
+# Get It Done - Practical PM Guide for Irish Small Businesses & Charities
 
 > A free, interactive project management guide built on the **ECCSR framework** by Joe Houghton, UCD Michael Smurfit Graduate Business School.
 
